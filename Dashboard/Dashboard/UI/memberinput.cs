@@ -98,10 +98,8 @@ namespace Dashboard
             }
 
             MessageBox.Show("회원가입이 완료 되었습니다");
-            Receipt rs = new Receipt(new Login(id, password), new Member(name, (telF + telB), (birthY + birthM + birthD)), new Genre(Mgenre, Hgenre));
-            ReceiptAdapter ra = new ReceiptAdapter();
-            ra.addReceipt(rs);
-            ra.viewReceipt(rs);
+            Member mm = new Member(id, password, name, telF + telB, (birthY + birthM + birthD), Mgenre, Hgenre);
+            
         }
     }
 }

@@ -9,13 +9,13 @@ namespace Dashboard.handler
 {
     class ReceiptAdapter
     {
-        private List<Receipt> receiptList = new List<Receipt>();
+        private List<member> receiptList = new List<member>();
 
-        public void addReceipt(Receipt receipt)
+        public void addMember(Member member)
         {
-            receiptList.Add(receipt);
+            receiptList.Add(member);
         }
-        public void viewReceipt(Receipt receipt)
+        public void viewMember(Member member)
         {
             Console.WriteLine("고객 이름 :" + receipt.Login.Id);
             Console.WriteLine("고객 전화번호 :" + receipt.Login.Password);

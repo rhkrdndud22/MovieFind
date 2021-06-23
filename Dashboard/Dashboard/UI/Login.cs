@@ -13,12 +13,14 @@ namespace Dashboard
 {
     public partial class Form2 : Form
     {
-        OracleHandler or = new OracleHandler();
-        ReceiptAdapter ra = new ReceiptAdapter();
-       
+        OracleHandler ora;
+        ReceiptAdapter adapter;
+        
         public Form2()
         {
             InitializeComponent();
+            ora = new OracleHandler();
+            adapter = new ReceiptAdapter();
         }
 
         private void button3_Click(object sender, EventArgs e)
