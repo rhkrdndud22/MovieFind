@@ -32,8 +32,11 @@ namespace Dashboard.UI
             else
             {
                 string query = "https://openapi.naver.com/v1/search/movie.xml?query=" + moviesearch.Text;
-                string your_client_id = ClientId.Text;
-                string your_client_secret = Clientpassword.Text;
+
+                string client_id = "X2_dnHMYL3zNMJNaj1Mq";
+                string client_secret = "icRzvX9KSX";
+                string your_client_id = client_id;
+                string your_client_secret = client_secret;
 
                 WebRequest wr = WebRequest.Create(query);
                 wr.Method = "GET";

@@ -29,18 +29,7 @@ namespace Dashboard.UI
         /// </summary>
         private void InitializeComponent()
         {
-            this.ClientId = new Sunny.UI.UITextBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.uiSymbolButton1 = new Sunny.UI.UISymbolButton();
-            this.Clientpassword = new Sunny.UI.UITextBox();
-            this.moviesearch = new Sunny.UI.UITextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.movietitle = new Sunny.UI.UITextBox();
-            this.starpoint = new Sunny.UI.UITextBox();
-            this.actor = new Sunny.UI.UITextBox();
-            this.director = new Sunny.UI.UITextBox();
-            this.open = new Sunny.UI.UITextBox();
-            this.subtitle = new Sunny.UI.UITextBox();
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -50,25 +39,18 @@ namespace Dashboard.UI
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.open = new Sunny.UI.UITextBox();
+            this.subtitle = new Sunny.UI.UITextBox();
+            this.starpoint = new Sunny.UI.UITextBox();
+            this.actor = new Sunny.UI.UITextBox();
+            this.director = new Sunny.UI.UITextBox();
+            this.movietitle = new Sunny.UI.UITextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.moviesearch = new Sunny.UI.UITextBox();
+            this.uiSymbolButton1 = new Sunny.UI.UISymbolButton();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // ClientId
-            // 
-            this.ClientId.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.ClientId.FillColor = System.Drawing.Color.White;
-            this.ClientId.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.ClientId.Location = new System.Drawing.Point(4, 5);
-            this.ClientId.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ClientId.Maximum = 2147483647D;
-            this.ClientId.Minimum = -2147483648D;
-            this.ClientId.MinimumSize = new System.Drawing.Size(1, 1);
-            this.ClientId.Name = "ClientId";
-            this.ClientId.Padding = new System.Windows.Forms.Padding(5);
-            this.ClientId.Size = new System.Drawing.Size(150, 29);
-            this.ClientId.TabIndex = 0;
-            this.ClientId.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel4
             // 
@@ -83,175 +65,11 @@ namespace Dashboard.UI
             this.panel4.Controls.Add(this.movietitle);
             this.panel4.Controls.Add(this.pictureBox1);
             this.panel4.Controls.Add(this.moviesearch);
-            this.panel4.Controls.Add(this.Clientpassword);
             this.panel4.Controls.Add(this.uiSymbolButton1);
-            this.panel4.Controls.Add(this.ClientId);
             this.panel4.Location = new System.Drawing.Point(-2, -1);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(858, 514);
             this.panel4.TabIndex = 20;
-            // 
-            // uiSymbolButton1
-            // 
-            this.uiSymbolButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiSymbolButton1.FillColor = System.Drawing.Color.Transparent;
-            this.uiSymbolButton1.FillDisableColor = System.Drawing.Color.Transparent;
-            this.uiSymbolButton1.FillHoverColor = System.Drawing.Color.Transparent;
-            this.uiSymbolButton1.FillPressColor = System.Drawing.Color.Transparent;
-            this.uiSymbolButton1.FillSelectedColor = System.Drawing.Color.Transparent;
-            this.uiSymbolButton1.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiSymbolButton1.Location = new System.Drawing.Point(161, 3);
-            this.uiSymbolButton1.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiSymbolButton1.Name = "uiSymbolButton1";
-            this.uiSymbolButton1.RectColor = System.Drawing.Color.Transparent;
-            this.uiSymbolButton1.Size = new System.Drawing.Size(74, 35);
-            this.uiSymbolButton1.Style = Sunny.UI.UIStyle.Custom;
-            this.uiSymbolButton1.Symbol = 61473;
-            this.uiSymbolButton1.TabIndex = 2;
-            this.uiSymbolButton1.Text = "찾기";
-            this.uiSymbolButton1.Click += new System.EventHandler(this.uiSymbolButton1_Click);
-            // 
-            // Clientpassword
-            // 
-            this.Clientpassword.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Clientpassword.FillColor = System.Drawing.Color.White;
-            this.Clientpassword.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.Clientpassword.Location = new System.Drawing.Point(4, 44);
-            this.Clientpassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Clientpassword.Maximum = 2147483647D;
-            this.Clientpassword.Minimum = -2147483648D;
-            this.Clientpassword.MinimumSize = new System.Drawing.Size(1, 1);
-            this.Clientpassword.Name = "Clientpassword";
-            this.Clientpassword.Padding = new System.Windows.Forms.Padding(5);
-            this.Clientpassword.Size = new System.Drawing.Size(150, 29);
-            this.Clientpassword.TabIndex = 2;
-            this.Clientpassword.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // moviesearch
-            // 
-            this.moviesearch.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.moviesearch.FillColor = System.Drawing.Color.White;
-            this.moviesearch.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.moviesearch.Location = new System.Drawing.Point(3, 78);
-            this.moviesearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.moviesearch.Maximum = 2147483647D;
-            this.moviesearch.Minimum = -2147483648D;
-            this.moviesearch.MinimumSize = new System.Drawing.Size(1, 1);
-            this.moviesearch.Name = "moviesearch";
-            this.moviesearch.Padding = new System.Windows.Forms.Padding(5);
-            this.moviesearch.Size = new System.Drawing.Size(150, 29);
-            this.moviesearch.TabIndex = 2;
-            this.moviesearch.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(10, 115);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(144, 70);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
-            // movietitle
-            // 
-            this.movietitle.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.movietitle.FillColor = System.Drawing.Color.White;
-            this.movietitle.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.movietitle.Location = new System.Drawing.Point(314, 28);
-            this.movietitle.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.movietitle.Maximum = 2147483647D;
-            this.movietitle.Minimum = -2147483648D;
-            this.movietitle.MinimumSize = new System.Drawing.Size(1, 1);
-            this.movietitle.Name = "movietitle";
-            this.movietitle.Padding = new System.Windows.Forms.Padding(5);
-            this.movietitle.Size = new System.Drawing.Size(150, 29);
-            this.movietitle.TabIndex = 3;
-            this.movietitle.Text = "제목";
-            this.movietitle.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // starpoint
-            // 
-            this.starpoint.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.starpoint.FillColor = System.Drawing.Color.White;
-            this.starpoint.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.starpoint.Location = new System.Drawing.Point(497, 117);
-            this.starpoint.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.starpoint.Maximum = 2147483647D;
-            this.starpoint.Minimum = -2147483648D;
-            this.starpoint.MinimumSize = new System.Drawing.Size(1, 1);
-            this.starpoint.Name = "starpoint";
-            this.starpoint.Padding = new System.Windows.Forms.Padding(5);
-            this.starpoint.Size = new System.Drawing.Size(150, 29);
-            this.starpoint.TabIndex = 3;
-            this.starpoint.Text = "제목";
-            this.starpoint.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // actor
-            // 
-            this.actor.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.actor.FillColor = System.Drawing.Color.White;
-            this.actor.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.actor.Location = new System.Drawing.Point(497, 78);
-            this.actor.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.actor.Maximum = 2147483647D;
-            this.actor.Minimum = -2147483648D;
-            this.actor.MinimumSize = new System.Drawing.Size(1, 1);
-            this.actor.Name = "actor";
-            this.actor.Padding = new System.Windows.Forms.Padding(5);
-            this.actor.Size = new System.Drawing.Size(150, 29);
-            this.actor.TabIndex = 3;
-            this.actor.Text = "제목";
-            this.actor.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // director
-            // 
-            this.director.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.director.FillColor = System.Drawing.Color.White;
-            this.director.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.director.Location = new System.Drawing.Point(497, 28);
-            this.director.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.director.Maximum = 2147483647D;
-            this.director.Minimum = -2147483648D;
-            this.director.MinimumSize = new System.Drawing.Size(1, 1);
-            this.director.Name = "director";
-            this.director.Padding = new System.Windows.Forms.Padding(5);
-            this.director.Size = new System.Drawing.Size(150, 29);
-            this.director.TabIndex = 3;
-            this.director.Text = "제목";
-            this.director.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // open
-            // 
-            this.open.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.open.FillColor = System.Drawing.Color.White;
-            this.open.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.open.Location = new System.Drawing.Point(305, 115);
-            this.open.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.open.Maximum = 2147483647D;
-            this.open.Minimum = -2147483648D;
-            this.open.MinimumSize = new System.Drawing.Size(1, 1);
-            this.open.Name = "open";
-            this.open.Padding = new System.Windows.Forms.Padding(5);
-            this.open.Size = new System.Drawing.Size(150, 29);
-            this.open.TabIndex = 3;
-            this.open.Text = "제목";
-            this.open.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // subtitle
-            // 
-            this.subtitle.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.subtitle.FillColor = System.Drawing.Color.White;
-            this.subtitle.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.subtitle.Location = new System.Drawing.Point(305, 76);
-            this.subtitle.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.subtitle.Maximum = 2147483647D;
-            this.subtitle.Minimum = -2147483648D;
-            this.subtitle.MinimumSize = new System.Drawing.Size(1, 1);
-            this.subtitle.Name = "subtitle";
-            this.subtitle.Padding = new System.Windows.Forms.Padding(5);
-            this.subtitle.Size = new System.Drawing.Size(150, 29);
-            this.subtitle.TabIndex = 3;
-            this.subtitle.Text = "제목";
-            this.subtitle.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // listView1
             // 
@@ -313,6 +131,153 @@ namespace Dashboard.UI
             this.columnHeader8.Text = "평점";
             this.columnHeader8.Width = 187;
             // 
+            // open
+            // 
+            this.open.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.open.FillColor = System.Drawing.Color.White;
+            this.open.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.open.Location = new System.Drawing.Point(429, 100);
+            this.open.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.open.Maximum = 2147483647D;
+            this.open.Minimum = -2147483648D;
+            this.open.MinimumSize = new System.Drawing.Size(1, 1);
+            this.open.Name = "open";
+            this.open.Padding = new System.Windows.Forms.Padding(5);
+            this.open.Size = new System.Drawing.Size(150, 29);
+            this.open.TabIndex = 3;
+            this.open.Text = "개봉일";
+            this.open.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // subtitle
+            // 
+            this.subtitle.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.subtitle.FillColor = System.Drawing.Color.White;
+            this.subtitle.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.subtitle.Location = new System.Drawing.Point(429, 61);
+            this.subtitle.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.subtitle.Maximum = 2147483647D;
+            this.subtitle.Minimum = -2147483648D;
+            this.subtitle.MinimumSize = new System.Drawing.Size(1, 1);
+            this.subtitle.Name = "subtitle";
+            this.subtitle.Padding = new System.Windows.Forms.Padding(5);
+            this.subtitle.Size = new System.Drawing.Size(150, 29);
+            this.subtitle.TabIndex = 3;
+            this.subtitle.Text = "영어제목";
+            this.subtitle.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // starpoint
+            // 
+            this.starpoint.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.starpoint.FillColor = System.Drawing.Color.White;
+            this.starpoint.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.starpoint.Location = new System.Drawing.Point(596, 100);
+            this.starpoint.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.starpoint.Maximum = 2147483647D;
+            this.starpoint.Minimum = -2147483648D;
+            this.starpoint.MinimumSize = new System.Drawing.Size(1, 1);
+            this.starpoint.Name = "starpoint";
+            this.starpoint.Padding = new System.Windows.Forms.Padding(5);
+            this.starpoint.Size = new System.Drawing.Size(150, 29);
+            this.starpoint.TabIndex = 3;
+            this.starpoint.Text = "평점";
+            this.starpoint.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // actor
+            // 
+            this.actor.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.actor.FillColor = System.Drawing.Color.White;
+            this.actor.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.actor.Location = new System.Drawing.Point(596, 61);
+            this.actor.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.actor.Maximum = 2147483647D;
+            this.actor.Minimum = -2147483648D;
+            this.actor.MinimumSize = new System.Drawing.Size(1, 1);
+            this.actor.Name = "actor";
+            this.actor.Padding = new System.Windows.Forms.Padding(5);
+            this.actor.Size = new System.Drawing.Size(150, 29);
+            this.actor.TabIndex = 3;
+            this.actor.Text = "배우";
+            this.actor.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // director
+            // 
+            this.director.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.director.FillColor = System.Drawing.Color.White;
+            this.director.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.director.Location = new System.Drawing.Point(596, 22);
+            this.director.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.director.Maximum = 2147483647D;
+            this.director.Minimum = -2147483648D;
+            this.director.MinimumSize = new System.Drawing.Size(1, 1);
+            this.director.Name = "director";
+            this.director.Padding = new System.Windows.Forms.Padding(5);
+            this.director.Size = new System.Drawing.Size(150, 29);
+            this.director.TabIndex = 3;
+            this.director.Text = "감독";
+            this.director.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // movietitle
+            // 
+            this.movietitle.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.movietitle.FillColor = System.Drawing.Color.White;
+            this.movietitle.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.movietitle.Location = new System.Drawing.Point(429, 22);
+            this.movietitle.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.movietitle.Maximum = 2147483647D;
+            this.movietitle.Minimum = -2147483648D;
+            this.movietitle.MinimumSize = new System.Drawing.Size(1, 1);
+            this.movietitle.Name = "movietitle";
+            this.movietitle.Padding = new System.Windows.Forms.Padding(5);
+            this.movietitle.Size = new System.Drawing.Size(150, 29);
+            this.movietitle.TabIndex = 3;
+            this.movietitle.Text = "제목";
+            this.movietitle.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(10, 65);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(288, 160);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // moviesearch
+            // 
+            this.moviesearch.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.moviesearch.FillColor = System.Drawing.Color.White;
+            this.moviesearch.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.moviesearch.Location = new System.Drawing.Point(10, 28);
+            this.moviesearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.moviesearch.Maximum = 2147483647D;
+            this.moviesearch.Minimum = -2147483648D;
+            this.moviesearch.MinimumSize = new System.Drawing.Size(1, 1);
+            this.moviesearch.Name = "moviesearch";
+            this.moviesearch.Padding = new System.Windows.Forms.Padding(5);
+            this.moviesearch.Size = new System.Drawing.Size(150, 29);
+            this.moviesearch.TabIndex = 2;
+            this.moviesearch.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // uiSymbolButton1
+            // 
+            this.uiSymbolButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiSymbolButton1.FillColor = System.Drawing.Color.Transparent;
+            this.uiSymbolButton1.FillDisableColor = System.Drawing.Color.Transparent;
+            this.uiSymbolButton1.FillHoverColor = System.Drawing.Color.Transparent;
+            this.uiSymbolButton1.FillPressColor = System.Drawing.Color.Transparent;
+            this.uiSymbolButton1.FillSelectedColor = System.Drawing.Color.Transparent;
+            this.uiSymbolButton1.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.uiSymbolButton1.Location = new System.Drawing.Point(167, 22);
+            this.uiSymbolButton1.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiSymbolButton1.Name = "uiSymbolButton1";
+            this.uiSymbolButton1.RectColor = System.Drawing.Color.Transparent;
+            this.uiSymbolButton1.Size = new System.Drawing.Size(74, 35);
+            this.uiSymbolButton1.Style = Sunny.UI.UIStyle.Custom;
+            this.uiSymbolButton1.Symbol = 61473;
+            this.uiSymbolButton1.TabIndex = 2;
+            this.uiSymbolButton1.Text = "찾기";
+            this.uiSymbolButton1.Click += new System.EventHandler(this.uiSymbolButton1_Click);
+            // 
             // Myinfochild1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -330,8 +295,6 @@ namespace Dashboard.UI
         }
 
         #endregion
-
-        private Sunny.UI.UITextBox ClientId;
         private System.Windows.Forms.Panel panel4;
         private Sunny.UI.UISymbolButton uiSymbolButton1;
         private System.Windows.Forms.ListView listView1;
@@ -351,6 +314,5 @@ namespace Dashboard.UI
         private Sunny.UI.UITextBox movietitle;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Sunny.UI.UITextBox moviesearch;
-        private Sunny.UI.UITextBox Clientpassword;
     }
 }
