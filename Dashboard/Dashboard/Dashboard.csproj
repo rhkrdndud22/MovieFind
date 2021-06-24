@@ -69,7 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="handler\OracleHandler.cs" />
-    <Compile Include="handler\ReceiptAdapter.cs" />
+    <Compile Include="handler\MemberAdapter.cs" />
     <Compile Include="model\Member.cs" />
     <Compile Include="UI\Info.cs">
       <SubType>Form</SubType>

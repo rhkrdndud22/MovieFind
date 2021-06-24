@@ -29,62 +29,63 @@ namespace Dashboard.UI
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.uiTextBox1 = new Sunny.UI.UITextBox();
+            this.ClientId = new Sunny.UI.UITextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.uiSymbolButton1 = new Sunny.UI.UISymbolButton();
-            this.uiDataGridView2 = new Sunny.UI.UIDataGridView();
-            this.uiSymbolLabel1 = new Sunny.UI.UISymbolLabel();
-            this.uiSymbolLabel2 = new Sunny.UI.UISymbolLabel();
-            this.uiSymbolLabel3 = new Sunny.UI.UISymbolLabel();
-            this.uiLabel2 = new Sunny.UI.UILabel();
-            this.uiLabel3 = new Sunny.UI.UILabel();
-            this.uiComboBox1 = new Sunny.UI.UIComboBox();
-            this.uiComboBox2 = new Sunny.UI.UIComboBox();
-            this.uiComboBox3 = new Sunny.UI.UIComboBox();
-            this.uiComboBox4 = new Sunny.UI.UIComboBox();
-            this.uiSymbolButton2 = new Sunny.UI.UISymbolButton();
+            this.Clientpassword = new Sunny.UI.UITextBox();
+            this.moviesearch = new Sunny.UI.UITextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.movietitle = new Sunny.UI.UITextBox();
+            this.starpoint = new Sunny.UI.UITextBox();
+            this.actor = new Sunny.UI.UITextBox();
+            this.director = new Sunny.UI.UITextBox();
+            this.open = new Sunny.UI.UITextBox();
+            this.subtitle = new Sunny.UI.UITextBox();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.uiDataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // uiTextBox1
+            // ClientId
             // 
-            this.uiTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.uiTextBox1.FillColor = System.Drawing.Color.White;
-            this.uiTextBox1.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiTextBox1.Location = new System.Drawing.Point(4, 5);
-            this.uiTextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiTextBox1.Maximum = 2147483647D;
-            this.uiTextBox1.Minimum = -2147483648D;
-            this.uiTextBox1.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiTextBox1.Name = "uiTextBox1";
-            this.uiTextBox1.Padding = new System.Windows.Forms.Padding(5);
-            this.uiTextBox1.Size = new System.Drawing.Size(150, 29);
-            this.uiTextBox1.TabIndex = 0;
-            this.uiTextBox1.Text = "제목";
-            this.uiTextBox1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ClientId.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.ClientId.FillColor = System.Drawing.Color.White;
+            this.ClientId.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.ClientId.Location = new System.Drawing.Point(4, 5);
+            this.ClientId.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ClientId.Maximum = 2147483647D;
+            this.ClientId.Minimum = -2147483648D;
+            this.ClientId.MinimumSize = new System.Drawing.Size(1, 1);
+            this.ClientId.Name = "ClientId";
+            this.ClientId.Padding = new System.Windows.Forms.Padding(5);
+            this.ClientId.Size = new System.Drawing.Size(150, 29);
+            this.ClientId.TabIndex = 0;
+            this.ClientId.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel4
             // 
             this.panel4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
-            this.panel4.Controls.Add(this.uiComboBox4);
-            this.panel4.Controls.Add(this.uiComboBox3);
-            this.panel4.Controls.Add(this.uiComboBox2);
-            this.panel4.Controls.Add(this.uiComboBox1);
-            this.panel4.Controls.Add(this.uiLabel3);
-            this.panel4.Controls.Add(this.uiLabel2);
-            this.panel4.Controls.Add(this.uiSymbolLabel3);
-            this.panel4.Controls.Add(this.uiSymbolLabel2);
-            this.panel4.Controls.Add(this.uiSymbolLabel1);
+            this.panel4.Controls.Add(this.listView1);
+            this.panel4.Controls.Add(this.open);
+            this.panel4.Controls.Add(this.subtitle);
+            this.panel4.Controls.Add(this.starpoint);
+            this.panel4.Controls.Add(this.actor);
+            this.panel4.Controls.Add(this.director);
+            this.panel4.Controls.Add(this.movietitle);
+            this.panel4.Controls.Add(this.pictureBox1);
+            this.panel4.Controls.Add(this.moviesearch);
+            this.panel4.Controls.Add(this.Clientpassword);
             this.panel4.Controls.Add(this.uiSymbolButton1);
-            this.panel4.Controls.Add(this.uiDataGridView2);
-            this.panel4.Controls.Add(this.uiTextBox1);
-            this.panel4.Controls.Add(this.uiSymbolButton2);
+            this.panel4.Controls.Add(this.ClientId);
             this.panel4.Location = new System.Drawing.Point(-2, -1);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(858, 514);
@@ -108,181 +109,209 @@ namespace Dashboard.UI
             this.uiSymbolButton1.Symbol = 61473;
             this.uiSymbolButton1.TabIndex = 2;
             this.uiSymbolButton1.Text = "찾기";
+            this.uiSymbolButton1.Click += new System.EventHandler(this.uiSymbolButton1_Click);
             // 
-            // uiDataGridView2
+            // Clientpassword
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            this.uiDataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.uiDataGridView2.BackgroundColor = System.Drawing.Color.White;
-            this.uiDataGridView2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.uiDataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.uiDataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.uiDataGridView2.EnableHeadersVisualStyles = false;
-            this.uiDataGridView2.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiDataGridView2.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
-            this.uiDataGridView2.Location = new System.Drawing.Point(3, 204);
-            this.uiDataGridView2.Name = "uiDataGridView2";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.uiDataGridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.uiDataGridView2.RowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.uiDataGridView2.RowTemplate.Height = 29;
-            this.uiDataGridView2.SelectedIndex = -1;
-            this.uiDataGridView2.ShowGridLine = true;
-            this.uiDataGridView2.Size = new System.Drawing.Size(855, 310);
-            this.uiDataGridView2.TabIndex = 3;
+            this.Clientpassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Clientpassword.FillColor = System.Drawing.Color.White;
+            this.Clientpassword.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.Clientpassword.Location = new System.Drawing.Point(4, 44);
+            this.Clientpassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Clientpassword.Maximum = 2147483647D;
+            this.Clientpassword.Minimum = -2147483648D;
+            this.Clientpassword.MinimumSize = new System.Drawing.Size(1, 1);
+            this.Clientpassword.Name = "Clientpassword";
+            this.Clientpassword.Padding = new System.Windows.Forms.Padding(5);
+            this.Clientpassword.Size = new System.Drawing.Size(150, 29);
+            this.Clientpassword.TabIndex = 2;
+            this.Clientpassword.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // uiSymbolLabel1
+            // moviesearch
             // 
-            this.uiSymbolLabel1.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiSymbolLabel1.ForeColor = System.Drawing.Color.White;
-            this.uiSymbolLabel1.Location = new System.Drawing.Point(3, 72);
-            this.uiSymbolLabel1.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiSymbolLabel1.Name = "uiSymbolLabel1";
-            this.uiSymbolLabel1.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
-            this.uiSymbolLabel1.Size = new System.Drawing.Size(78, 35);
-            this.uiSymbolLabel1.Style = Sunny.UI.UIStyle.Custom;
-            this.uiSymbolLabel1.Symbol = 61476;
-            this.uiSymbolLabel1.SymbolColor = System.Drawing.Color.White;
-            this.uiSymbolLabel1.TabIndex = 4;
-            this.uiSymbolLabel1.Text = "나라";
+            this.moviesearch.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.moviesearch.FillColor = System.Drawing.Color.White;
+            this.moviesearch.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.moviesearch.Location = new System.Drawing.Point(3, 78);
+            this.moviesearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.moviesearch.Maximum = 2147483647D;
+            this.moviesearch.Minimum = -2147483648D;
+            this.moviesearch.MinimumSize = new System.Drawing.Size(1, 1);
+            this.moviesearch.Name = "moviesearch";
+            this.moviesearch.Padding = new System.Windows.Forms.Padding(5);
+            this.moviesearch.Size = new System.Drawing.Size(150, 29);
+            this.moviesearch.TabIndex = 2;
+            this.moviesearch.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // uiSymbolLabel2
+            // pictureBox1
             // 
-            this.uiSymbolLabel2.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiSymbolLabel2.ForeColor = System.Drawing.Color.White;
-            this.uiSymbolLabel2.Location = new System.Drawing.Point(3, 109);
-            this.uiSymbolLabel2.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiSymbolLabel2.Name = "uiSymbolLabel2";
-            this.uiSymbolLabel2.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
-            this.uiSymbolLabel2.Size = new System.Drawing.Size(78, 35);
-            this.uiSymbolLabel2.Style = Sunny.UI.UIStyle.Custom;
-            this.uiSymbolLabel2.Symbol = 61555;
-            this.uiSymbolLabel2.SymbolColor = System.Drawing.Color.White;
-            this.uiSymbolLabel2.TabIndex = 5;
-            this.uiSymbolLabel2.Text = "연도";
+            this.pictureBox1.Location = new System.Drawing.Point(10, 115);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(144, 70);
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
-            // uiSymbolLabel3
+            // movietitle
             // 
-            this.uiSymbolLabel3.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiSymbolLabel3.ForeColor = System.Drawing.Color.White;
-            this.uiSymbolLabel3.Location = new System.Drawing.Point(3, 42);
-            this.uiSymbolLabel3.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiSymbolLabel3.Name = "uiSymbolLabel3";
-            this.uiSymbolLabel3.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
-            this.uiSymbolLabel3.Size = new System.Drawing.Size(78, 35);
-            this.uiSymbolLabel3.Style = Sunny.UI.UIStyle.Custom;
-            this.uiSymbolLabel3.Symbol = 57430;
-            this.uiSymbolLabel3.SymbolColor = System.Drawing.Color.White;
-            this.uiSymbolLabel3.TabIndex = 6;
-            this.uiSymbolLabel3.Text = "장르";
+            this.movietitle.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.movietitle.FillColor = System.Drawing.Color.White;
+            this.movietitle.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.movietitle.Location = new System.Drawing.Point(314, 28);
+            this.movietitle.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.movietitle.Maximum = 2147483647D;
+            this.movietitle.Minimum = -2147483648D;
+            this.movietitle.MinimumSize = new System.Drawing.Size(1, 1);
+            this.movietitle.Name = "movietitle";
+            this.movietitle.Padding = new System.Windows.Forms.Padding(5);
+            this.movietitle.Size = new System.Drawing.Size(150, 29);
+            this.movietitle.TabIndex = 3;
+            this.movietitle.Text = "제목";
+            this.movietitle.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // uiLabel2
+            // starpoint
             // 
-            this.uiLabel2.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiLabel2.ForeColor = System.Drawing.Color.White;
-            this.uiLabel2.Location = new System.Drawing.Point(173, 78);
-            this.uiLabel2.Name = "uiLabel2";
-            this.uiLabel2.Size = new System.Drawing.Size(55, 29);
-            this.uiLabel2.TabIndex = 7;
-            this.uiLabel2.Text = "에서";
-            this.uiLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.starpoint.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.starpoint.FillColor = System.Drawing.Color.White;
+            this.starpoint.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.starpoint.Location = new System.Drawing.Point(497, 117);
+            this.starpoint.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.starpoint.Maximum = 2147483647D;
+            this.starpoint.Minimum = -2147483648D;
+            this.starpoint.MinimumSize = new System.Drawing.Size(1, 1);
+            this.starpoint.Name = "starpoint";
+            this.starpoint.Padding = new System.Windows.Forms.Padding(5);
+            this.starpoint.Size = new System.Drawing.Size(150, 29);
+            this.starpoint.TabIndex = 3;
+            this.starpoint.Text = "제목";
+            this.starpoint.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // uiLabel3
+            // actor
             // 
-            this.uiLabel3.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiLabel3.ForeColor = System.Drawing.Color.White;
-            this.uiLabel3.Location = new System.Drawing.Point(310, 78);
-            this.uiLabel3.Name = "uiLabel3";
-            this.uiLabel3.Size = new System.Drawing.Size(100, 29);
-            this.uiLabel3.TabIndex = 8;
-            this.uiLabel3.Text = "까지";
-            this.uiLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.actor.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.actor.FillColor = System.Drawing.Color.White;
+            this.actor.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.actor.Location = new System.Drawing.Point(497, 78);
+            this.actor.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.actor.Maximum = 2147483647D;
+            this.actor.Minimum = -2147483648D;
+            this.actor.MinimumSize = new System.Drawing.Size(1, 1);
+            this.actor.Name = "actor";
+            this.actor.Padding = new System.Windows.Forms.Padding(5);
+            this.actor.Size = new System.Drawing.Size(150, 29);
+            this.actor.TabIndex = 3;
+            this.actor.Text = "제목";
+            this.actor.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // uiComboBox1
+            // director
             // 
-            this.uiComboBox1.FillColor = System.Drawing.Color.White;
-            this.uiComboBox1.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiComboBox1.Location = new System.Drawing.Point(88, 48);
-            this.uiComboBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiComboBox1.MinimumSize = new System.Drawing.Size(63, 0);
-            this.uiComboBox1.Name = "uiComboBox1";
-            this.uiComboBox1.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
-            this.uiComboBox1.Size = new System.Drawing.Size(78, 29);
-            this.uiComboBox1.TabIndex = 9;
-            this.uiComboBox1.Text = "장르";
-            this.uiComboBox1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.director.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.director.FillColor = System.Drawing.Color.White;
+            this.director.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.director.Location = new System.Drawing.Point(497, 28);
+            this.director.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.director.Maximum = 2147483647D;
+            this.director.Minimum = -2147483648D;
+            this.director.MinimumSize = new System.Drawing.Size(1, 1);
+            this.director.Name = "director";
+            this.director.Padding = new System.Windows.Forms.Padding(5);
+            this.director.Size = new System.Drawing.Size(150, 29);
+            this.director.TabIndex = 3;
+            this.director.Text = "제목";
+            this.director.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // uiComboBox2
+            // open
             // 
-            this.uiComboBox2.FillColor = System.Drawing.Color.White;
-            this.uiComboBox2.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiComboBox2.Location = new System.Drawing.Point(88, 115);
-            this.uiComboBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiComboBox2.MinimumSize = new System.Drawing.Size(63, 0);
-            this.uiComboBox2.Name = "uiComboBox2";
-            this.uiComboBox2.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
-            this.uiComboBox2.Size = new System.Drawing.Size(78, 29);
-            this.uiComboBox2.TabIndex = 10;
-            this.uiComboBox2.Text = "나라";
-            this.uiComboBox2.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.open.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.open.FillColor = System.Drawing.Color.White;
+            this.open.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.open.Location = new System.Drawing.Point(305, 115);
+            this.open.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.open.Maximum = 2147483647D;
+            this.open.Minimum = -2147483648D;
+            this.open.MinimumSize = new System.Drawing.Size(1, 1);
+            this.open.Name = "open";
+            this.open.Padding = new System.Windows.Forms.Padding(5);
+            this.open.Size = new System.Drawing.Size(150, 29);
+            this.open.TabIndex = 3;
+            this.open.Text = "제목";
+            this.open.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // uiComboBox3
+            // subtitle
             // 
-            this.uiComboBox3.FillColor = System.Drawing.Color.White;
-            this.uiComboBox3.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiComboBox3.Location = new System.Drawing.Point(216, 78);
-            this.uiComboBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiComboBox3.MinimumSize = new System.Drawing.Size(63, 0);
-            this.uiComboBox3.Name = "uiComboBox3";
-            this.uiComboBox3.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
-            this.uiComboBox3.Size = new System.Drawing.Size(87, 29);
-            this.uiComboBox3.TabIndex = 10;
-            this.uiComboBox3.Text = "선택";
-            this.uiComboBox3.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.subtitle.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.subtitle.FillColor = System.Drawing.Color.White;
+            this.subtitle.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.subtitle.Location = new System.Drawing.Point(305, 76);
+            this.subtitle.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.subtitle.Maximum = 2147483647D;
+            this.subtitle.Minimum = -2147483648D;
+            this.subtitle.MinimumSize = new System.Drawing.Size(1, 1);
+            this.subtitle.Name = "subtitle";
+            this.subtitle.Padding = new System.Windows.Forms.Padding(5);
+            this.subtitle.Size = new System.Drawing.Size(150, 29);
+            this.subtitle.TabIndex = 3;
+            this.subtitle.Text = "제목";
+            this.subtitle.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // uiComboBox4
+            // listView1
             // 
-            this.uiComboBox4.FillColor = System.Drawing.Color.White;
-            this.uiComboBox4.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiComboBox4.Location = new System.Drawing.Point(88, 78);
-            this.uiComboBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiComboBox4.MinimumSize = new System.Drawing.Size(63, 0);
-            this.uiComboBox4.Name = "uiComboBox4";
-            this.uiComboBox4.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
-            this.uiComboBox4.Size = new System.Drawing.Size(78, 29);
-            this.uiComboBox4.TabIndex = 10;
-            this.uiComboBox4.Text = "선택";
-            this.uiComboBox4.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4,
+            this.columnHeader5,
+            this.columnHeader6,
+            this.columnHeader7,
+            this.columnHeader8});
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(0, 231);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(855, 280);
+            this.listView1.TabIndex = 2;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
-            // uiSymbolButton2
+            // columnHeader1
             // 
-            this.uiSymbolButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiSymbolButton2.FillColor = System.Drawing.Color.Transparent;
-            this.uiSymbolButton2.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiSymbolButton2.ForeColor = System.Drawing.SystemColors.Window;
-            this.uiSymbolButton2.Location = new System.Drawing.Point(173, 110);
-            this.uiSymbolButton2.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiSymbolButton2.Name = "uiSymbolButton2";
-            this.uiSymbolButton2.RectColor = System.Drawing.Color.Transparent;
-            this.uiSymbolButton2.Size = new System.Drawing.Size(74, 35);
-            this.uiSymbolButton2.Style = Sunny.UI.UIStyle.Custom;
-            this.uiSymbolButton2.Symbol = 61473;
-            this.uiSymbolButton2.TabIndex = 11;
-            this.uiSymbolButton2.Text = "찾기";
+            this.columnHeader1.Text = "영화제목";
+            this.columnHeader1.Width = 199;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "링크";
+            this.columnHeader2.Width = 118;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "이미지";
+            this.columnHeader3.Width = 118;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "부제목";
+            this.columnHeader4.Width = 121;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "개봉일";
+            this.columnHeader5.Width = 131;
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "감독";
+            this.columnHeader6.Width = 124;
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "배우";
+            this.columnHeader7.Width = 117;
+            // 
+            // columnHeader8
+            // 
+            this.columnHeader8.Text = "평점";
+            this.columnHeader8.Width = 187;
             // 
             // Myinfochild1
             // 
@@ -295,26 +324,33 @@ namespace Dashboard.UI
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form4";
             this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.uiDataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Sunny.UI.UITextBox uiTextBox1;
+        private Sunny.UI.UITextBox ClientId;
         private System.Windows.Forms.Panel panel4;
-        private Sunny.UI.UIDataGridView uiDataGridView2;
         private Sunny.UI.UISymbolButton uiSymbolButton1;
-        private Sunny.UI.UIComboBox uiComboBox4;
-        private Sunny.UI.UIComboBox uiComboBox3;
-        private Sunny.UI.UIComboBox uiComboBox2;
-        private Sunny.UI.UIComboBox uiComboBox1;
-        private Sunny.UI.UILabel uiLabel3;
-        private Sunny.UI.UILabel uiLabel2;
-        private Sunny.UI.UISymbolLabel uiSymbolLabel3;
-        private Sunny.UI.UISymbolLabel uiSymbolLabel2;
-        private Sunny.UI.UISymbolLabel uiSymbolLabel1;
-        private Sunny.UI.UISymbolButton uiSymbolButton2;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.ColumnHeader columnHeader6;
+        private System.Windows.Forms.ColumnHeader columnHeader7;
+        private System.Windows.Forms.ColumnHeader columnHeader8;
+        private Sunny.UI.UITextBox open;
+        private Sunny.UI.UITextBox subtitle;
+        private Sunny.UI.UITextBox starpoint;
+        private Sunny.UI.UITextBox actor;
+        private Sunny.UI.UITextBox director;
+        private Sunny.UI.UITextBox movietitle;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private Sunny.UI.UITextBox moviesearch;
+        private Sunny.UI.UITextBox Clientpassword;
     }
 }

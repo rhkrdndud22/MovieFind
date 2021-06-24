@@ -14,13 +14,13 @@ namespace Dashboard
     public partial class Form2 : Form
     {
         OracleHandler ora;
-        ReceiptAdapter adapter;
+        MemberAdapter adapter;
         
         public Form2()
         {
             InitializeComponent();
             ora = new OracleHandler();
-            adapter = new ReceiptAdapter();
+            adapter = new MemberAdapter();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -30,8 +30,8 @@ namespace Dashboard
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form3 f3 = new Form3();
-            f3.Show();
+            new Form3(adapter).ShowDialog();
+            /*adapter.addReceiptDB();*/
         }
 
         private void button1_Click(object sender, EventArgs e)

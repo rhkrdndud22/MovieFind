@@ -13,13 +13,18 @@ using System.Windows.Forms;
 
 namespace Dashboard
 {
-    public partial class Form3 : Form
-    {
+     partial class Form3 : Form
+    { MemberAdapter adapter;
         public Form3()
         {
             InitializeComponent();
         }
 
+        public Form3(MemberAdapter adapter)
+        {
+            InitializeComponent();
+            this.adapter = adapter;
+        }
         private void button3_Click(object sender, EventArgs e)
         {
             Close();
@@ -98,7 +103,7 @@ namespace Dashboard
             }
 
             MessageBox.Show("회원가입이 완료 되었습니다");
-            Member mm = new Member(id, password, name, telF + telB, (birthY + birthM + birthD), Mgenre, Hgenre);
+             adapter.addMember(new Member(id, password, name, telF + telB, (birthY + birthM + birthD), Mgenre, Hgenre));
             
         }
     }
