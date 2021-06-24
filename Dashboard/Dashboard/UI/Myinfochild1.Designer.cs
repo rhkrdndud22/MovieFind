@@ -30,6 +30,8 @@ namespace Dashboard.UI
         private void InitializeComponent()
         {
             this.panel4 = new System.Windows.Forms.Panel();
+            this.movieselect = new System.Windows.Forms.ComboBox();
+            this.uiSymbolButton2 = new Sunny.UI.UISymbolButton();
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -48,6 +50,7 @@ namespace Dashboard.UI
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.moviesearch = new Sunny.UI.UITextBox();
             this.uiSymbolButton1 = new Sunny.UI.UISymbolButton();
+            this.querytext = new Sunny.UI.UITextBox();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -56,6 +59,9 @@ namespace Dashboard.UI
             // 
             this.panel4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
+            this.panel4.Controls.Add(this.querytext);
+            this.panel4.Controls.Add(this.movieselect);
+            this.panel4.Controls.Add(this.uiSymbolButton2);
             this.panel4.Controls.Add(this.listView1);
             this.panel4.Controls.Add(this.open);
             this.panel4.Controls.Add(this.subtitle);
@@ -70,6 +76,60 @@ namespace Dashboard.UI
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(858, 514);
             this.panel4.TabIndex = 20;
+            // 
+            // movieselect
+            // 
+            this.movieselect.FormattingEnabled = true;
+            this.movieselect.Items.AddRange(new object[] {
+            "1.드라마",
+            "2.판타지",
+            "3.서부",
+            "4.공포",
+            "5.로맨스",
+            "6.모헙",
+            "7.스릴러",
+            "8.느와르",
+            "9.컬트",
+            "10.다큐멘토리",
+            "11.코미디",
+            "12.가족",
+            "13.미스터리",
+            "14.전쟁",
+            "15.애니메이션",
+            "16.범죄",
+            "17.뮤지컬",
+            "21.에로",
+            "22.서스펜스",
+            "23.서사",
+            "24.블랙코미디",
+            "25.실험",
+            "26.영화카툰",
+            "27.영화음악",
+            "28.영화패러디포스터"});
+            this.movieselect.Location = new System.Drawing.Point(359, 177);
+            this.movieselect.Name = "movieselect";
+            this.movieselect.Size = new System.Drawing.Size(121, 20);
+            this.movieselect.TabIndex = 5;
+            // 
+            // uiSymbolButton2
+            // 
+            this.uiSymbolButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiSymbolButton2.FillColor = System.Drawing.Color.Transparent;
+            this.uiSymbolButton2.FillDisableColor = System.Drawing.Color.Transparent;
+            this.uiSymbolButton2.FillHoverColor = System.Drawing.Color.Transparent;
+            this.uiSymbolButton2.FillPressColor = System.Drawing.Color.Transparent;
+            this.uiSymbolButton2.FillSelectedColor = System.Drawing.Color.Transparent;
+            this.uiSymbolButton2.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.uiSymbolButton2.Location = new System.Drawing.Point(515, 162);
+            this.uiSymbolButton2.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiSymbolButton2.Name = "uiSymbolButton2";
+            this.uiSymbolButton2.RectColor = System.Drawing.Color.Transparent;
+            this.uiSymbolButton2.Size = new System.Drawing.Size(74, 35);
+            this.uiSymbolButton2.Style = Sunny.UI.UIStyle.Custom;
+            this.uiSymbolButton2.Symbol = 61473;
+            this.uiSymbolButton2.TabIndex = 4;
+            this.uiSymbolButton2.Text = "찾기";
+            this.uiSymbolButton2.Click += new System.EventHandler(this.uiSymbolButton2_Click);
             // 
             // listView1
             // 
@@ -213,7 +273,6 @@ namespace Dashboard.UI
             this.director.Padding = new System.Windows.Forms.Padding(5);
             this.director.Size = new System.Drawing.Size(150, 29);
             this.director.TabIndex = 3;
-            this.director.Text = "감독";
             this.director.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // movietitle
@@ -278,6 +337,22 @@ namespace Dashboard.UI
             this.uiSymbolButton1.Text = "찾기";
             this.uiSymbolButton1.Click += new System.EventHandler(this.uiSymbolButton1_Click);
             // 
+            // querytext
+            // 
+            this.querytext.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.querytext.FillColor = System.Drawing.Color.White;
+            this.querytext.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.querytext.Location = new System.Drawing.Point(359, 139);
+            this.querytext.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.querytext.Maximum = 2147483647D;
+            this.querytext.Minimum = -2147483648D;
+            this.querytext.MinimumSize = new System.Drawing.Size(1, 1);
+            this.querytext.Name = "querytext";
+            this.querytext.Padding = new System.Windows.Forms.Padding(5);
+            this.querytext.Size = new System.Drawing.Size(150, 29);
+            this.querytext.TabIndex = 3;
+            this.querytext.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // Myinfochild1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -314,5 +389,8 @@ namespace Dashboard.UI
         private Sunny.UI.UITextBox movietitle;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Sunny.UI.UITextBox moviesearch;
+        private System.Windows.Forms.ComboBox movieselect;
+        private Sunny.UI.UISymbolButton uiSymbolButton2;
+        private Sunny.UI.UITextBox querytext;
     }
 }
