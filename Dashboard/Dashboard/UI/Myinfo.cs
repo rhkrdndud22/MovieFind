@@ -95,6 +95,7 @@ namespace Dashboard
             pnlNav.Height = btnCalender.Height;
             pnlNav.Top = btnCalender.Top;
             btnCalender.BackColor = Color.FromArgb(46, 51, 73);
+          
             openChildForm(new Myinfochild2());
         }
 
@@ -110,6 +111,8 @@ namespace Dashboard
             pnlNav.Height = btnsettings.Height;
             pnlNav.Top = btnsettings.Top;
             btnsettings.BackColor = Color.FromArgb(46, 51, 73);
+            Form1 F1 = new Form1();
+            F1.Show();
         }
 
         private void btnDashbord_Leave(object sender, EventArgs e)

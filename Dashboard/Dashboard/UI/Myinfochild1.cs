@@ -83,68 +83,7 @@ namespace Dashboard.UI
                 }
             }
         }
-        private void uiSymbolButton2_Click(object sender, EventArgs e)
-        {
-            if (movieselect.Text == "")
-            {
-                MessageBox.Show("검색어를 입력해주세요!");
-            }
-            else
-            {
-                
-                
-                string query = "https://openapi.naver.com/v1/search/movie.xml?query="+querytext.Text+"&display=10&start=1&genre=" + movieselect.Text;
-                
-                string client_id = "X2_dnHMYL3zNMJNaj1Mq";
-                string client_secret = "icRzvX9KSX";
-                string your_client_id = client_id;
-                string your_client_secret = client_secret;
-
-                WebRequest wr = WebRequest.Create(query);
-                wr.Method = "GET";
-                //X-Naver-Client-Id
-                //X-Naver-Client-Secret
-                wr.Headers.Add("X-Naver-Client-Id", your_client_id);
-                wr.Headers.Add("X-Naver-Client-Secret", your_client_secret);
-
-                WebResponse wrs = wr.GetResponse();
-                Stream s = wrs.GetResponseStream();
-                StreamReader sr = new StreamReader(s);
-
-                string response = sr.ReadToEnd();
-
-                //richTextBox1.Text = response;
-
-                XmlDocument xd = new XmlDocument();
-                xd.LoadXml(response);
-
-                //rss/채널/
-                XmlNode xn = xd["rss"]["channel"];
-
-                //0, 3
-
-
-                //원래 리스트뷰에 있던걸 삭제한다!
-                listView1.Items.Clear();
-
-                for (int i = 7; i < xn.ChildNodes.Count; i++)
-                {
-                    ListViewItem lvi = new ListViewItem();
-                    lvi.Text = xn.ChildNodes[i]["title"].InnerText.Replace("<b>", "").Replace("</b>", "");
-
-                    lvi.SubItems.Add(xn.ChildNodes[i]["link"].InnerText);
-                    lvi.SubItems.Add(xn.ChildNodes[i]["image"].InnerText);
-                    lvi.SubItems.Add(xn.ChildNodes[i]["subtitle"].InnerText);
-                    lvi.SubItems.Add(xn.ChildNodes[i]["pubDate"].InnerText);
-                    lvi.SubItems.Add(xn.ChildNodes[i]["director"].InnerText);
-                    lvi.SubItems.Add(xn.ChildNodes[i]["actor"].InnerText);
-                    lvi.SubItems.Add(xn.ChildNodes[i]["userRating"].InnerText);
-
-                    listView1.Items.Add(lvi);
-                    //richTextBox1.Text += xn.ChildNodes[i]["title"].InnerText.Replace("<b>", "").Replace("</b>", "") + "\n";
-                }
-            }
-        }
+        
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (listView1.SelectedItems.Count == 1)
