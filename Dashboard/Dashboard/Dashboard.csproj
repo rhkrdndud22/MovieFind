@@ -71,12 +71,6 @@
     <Compile Include="handler\OracleHandler.cs" />
     <Compile Include="handler\MemberAdapter.cs" />
     <Compile Include="model\Member.cs" />
-    <Compile Include="UI\Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="UI\Info.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,9 +109,6 @@
     <Compile Include="UI\Myinfochild1.Designer.cs">
       <DependentUpon>Myinfochild1.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UI\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UI\Info.resx">
       <DependentUpon>Info.cs</DependentUpon>
     </EmbeddedResource>

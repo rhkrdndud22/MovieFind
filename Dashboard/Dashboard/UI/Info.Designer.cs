@@ -121,11 +121,11 @@ namespace Dashboard.UI
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(75, 20);
+            this.label4.Location = new System.Drawing.Point(117, 20);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(136, 25);
+            this.label4.Size = new System.Drawing.Size(50, 25);
             this.label4.TabIndex = 0;
-            this.label4.Text = "선호 하는 장르";
+            this.label4.Text = "이름";
             // 
             // pictureBox2
             // 
@@ -165,9 +165,9 @@ namespace Dashboard.UI
             this.label12.ForeColor = System.Drawing.Color.White;
             this.label12.Location = new System.Drawing.Point(3, 19);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(179, 25);
+            this.label12.Size = new System.Drawing.Size(93, 25);
             this.label12.TabIndex = 0;
-            this.label12.Text = "선호 장르 영화 추천";
+            this.label12.Text = "추천 영화";
             // 
             // panel7
             // 

@@ -31,6 +31,7 @@ namespace Dashboard.UI
         {
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.uiSymbolButton2 = new Sunny.UI.UISymbolButton();
             this.uiSymbolLabel6 = new Sunny.UI.UISymbolLabel();
             this.uiSymbolLabel5 = new Sunny.UI.UISymbolLabel();
             this.uiSymbolLabel4 = new Sunny.UI.UISymbolLabel();
@@ -56,6 +57,7 @@ namespace Dashboard.UI
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.moviesearch = new Sunny.UI.UITextBox();
             this.uiSymbolButton1 = new Sunny.UI.UISymbolButton();
+            this.uiComboBox1 = new Sunny.UI.UIComboBox();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -78,6 +80,8 @@ namespace Dashboard.UI
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.uiComboBox1);
+            this.panel1.Controls.Add(this.uiSymbolButton2);
             this.panel1.Controls.Add(this.uiSymbolLabel6);
             this.panel1.Controls.Add(this.uiSymbolLabel5);
             this.panel1.Controls.Add(this.uiSymbolLabel4);
@@ -94,6 +98,22 @@ namespace Dashboard.UI
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(532, 222);
             this.panel1.TabIndex = 21;
+            // 
+            // uiSymbolButton2
+            // 
+            this.uiSymbolButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiSymbolButton2.FillColor = System.Drawing.Color.Transparent;
+            this.uiSymbolButton2.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.uiSymbolButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.uiSymbolButton2.Location = new System.Drawing.Point(378, 187);
+            this.uiSymbolButton2.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiSymbolButton2.Name = "uiSymbolButton2";
+            this.uiSymbolButton2.RectColor = System.Drawing.Color.Transparent;
+            this.uiSymbolButton2.Size = new System.Drawing.Size(102, 29);
+            this.uiSymbolButton2.Style = Sunny.UI.UIStyle.Custom;
+            this.uiSymbolButton2.Symbol = 61445;
+            this.uiSymbolButton2.TabIndex = 21;
+            this.uiSymbolButton2.Text = "별점주기";
             // 
             // uiSymbolLabel6
             // 
@@ -397,6 +417,31 @@ namespace Dashboard.UI
             this.uiSymbolButton1.Text = "찾기";
             this.uiSymbolButton1.Click += new System.EventHandler(this.uiSymbolButton1_Click);
             // 
+            // uiComboBox1
+            // 
+            this.uiComboBox1.FillColor = System.Drawing.Color.White;
+            this.uiComboBox1.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.uiComboBox1.Items.AddRange(new object[] {
+            "0.5",
+            "1.0",
+            "1.5",
+            "2.0",
+            "2.5",
+            "3.0",
+            "3.5",
+            "4.0",
+            "4.5",
+            "5.0"});
+            this.uiComboBox1.Location = new System.Drawing.Point(232, 188);
+            this.uiComboBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiComboBox1.MinimumSize = new System.Drawing.Size(63, 0);
+            this.uiComboBox1.Name = "uiComboBox1";
+            this.uiComboBox1.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
+            this.uiComboBox1.Size = new System.Drawing.Size(150, 29);
+            this.uiComboBox1.TabIndex = 22;
+            this.uiComboBox1.Text = "별점";
+            this.uiComboBox1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // Myinfochild1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -443,5 +488,7 @@ namespace Dashboard.UI
         private Sunny.UI.UISymbolLabel uiSymbolLabel4;
         private Sunny.UI.UISymbolLabel uiSymbolLabel3;
         private Sunny.UI.UISymbolLabel uiSymbolLabel2;
+        private Sunny.UI.UISymbolButton uiSymbolButton2;
+        private Sunny.UI.UIComboBox uiComboBox1;
     }
 }
