@@ -106,7 +106,7 @@ namespace Dashboard.UI
             "26.영화카툰",
             "27.영화음악",
             "28.영화패러디포스터"});
-            this.movieselect.Location = new System.Drawing.Point(359, 177);
+            this.movieselect.Location = new System.Drawing.Point(611, 199);
             this.movieselect.Name = "movieselect";
             this.movieselect.Size = new System.Drawing.Size(121, 20);
             this.movieselect.TabIndex = 5;
@@ -120,7 +120,7 @@ namespace Dashboard.UI
             this.uiSymbolButton2.FillPressColor = System.Drawing.Color.Transparent;
             this.uiSymbolButton2.FillSelectedColor = System.Drawing.Color.Transparent;
             this.uiSymbolButton2.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiSymbolButton2.Location = new System.Drawing.Point(515, 162);
+            this.uiSymbolButton2.Location = new System.Drawing.Point(781, 184);
             this.uiSymbolButton2.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiSymbolButton2.Name = "uiSymbolButton2";
             this.uiSymbolButton2.RectColor = System.Drawing.Color.Transparent;
@@ -342,7 +342,7 @@ namespace Dashboard.UI
             this.querytext.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.querytext.FillColor = System.Drawing.Color.White;
             this.querytext.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.querytext.Location = new System.Drawing.Point(359, 139);
+            this.querytext.Location = new System.Drawing.Point(611, 162);
             this.querytext.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.querytext.Maximum = 2147483647D;
             this.querytext.Minimum = -2147483648D;
