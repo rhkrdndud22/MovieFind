@@ -102,9 +102,20 @@ namespace Dashboard
                 return;
             }
 
-            MessageBox.Show("회원가입이 완료 되었습니다");
-             adapter.addMember(new Member(id, password, name, telF + telB, (birthY + birthM + birthD), Mgenre, Hgenre));
+           
+                adapter.addMember(new Member(id, password, name, telF + telB, (birthY + birthM + birthD), Mgenre, Hgenre));
+               
             
+          
+             
+            
+            MessageBox.Show("회원가입이 완료 되었습니다");
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            adapter.selectdb();
         }
     }
 }

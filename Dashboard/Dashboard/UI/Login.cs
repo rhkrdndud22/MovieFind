@@ -20,7 +20,7 @@ namespace Dashboard
         {
             InitializeComponent();
             ora = new OracleHandler();
-            adapter = new MemberAdapter();
+            adapter = new MemberAdapter(ora);
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -31,7 +31,7 @@ namespace Dashboard
         private void button2_Click(object sender, EventArgs e)
         {
             new Form3(adapter).ShowDialog();
-            /*adapter.addReceiptDB();*/
+            adapter.addReceiptDb();
         }
 
         private void button1_Click(object sender, EventArgs e)
