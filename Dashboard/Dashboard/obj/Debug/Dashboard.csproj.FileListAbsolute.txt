@@ -58,3 +58,4 @@ C:\Users\곽우영\Documents\GitHub\personalproject1\Dashboard\Dashboard\obj\Deb
 C:\Users\곽우영\Documents\GitHub\personalproject1\Dashboard\Dashboard\obj\Debug\Dashboard.exe
 C:\Users\곽우영\Documents\GitHub\personalproject1\Dashboard\Dashboard\obj\Debug\Dashboard.pdb
 C:\Users\곽우영\Documents\GitHub\personalproject1\Dashboard\Dashboard\obj\Debug\Dashboard.UI.Form1.resources
+C:\Users\KB\Desktop\Create a Modern Flat UI Design Dashboard in C# 2020 - Part I\Dashboard\Dashboard\obj\Debug\Dashboard.UI.Form1.resources

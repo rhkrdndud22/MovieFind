@@ -76,61 +76,6 @@ namespace Dashboard.UI
             this.panel4.Size = new System.Drawing.Size(858, 514);
             this.panel4.TabIndex = 20;
             // 
-<<<<<<< HEAD
-            // movieselect
-            // 
-            this.movieselect.FormattingEnabled = true;
-            this.movieselect.Items.AddRange(new object[] {
-            "1.드라마",
-            "2.판타지",
-            "3.서부",
-            "4.공포",
-            "5.로맨스",
-            "6.모헙",
-            "7.스릴러",
-            "8.느와르",
-            "9.컬트",
-            "10.다큐멘토리",
-            "11.코미디",
-            "12.가족",
-            "13.미스터리",
-            "14.전쟁",
-            "15.애니메이션",
-            "16.범죄",
-            "17.뮤지컬",
-            "21.에로",
-            "22.서스펜스",
-            "23.서사",
-            "24.블랙코미디",
-            "25.실험",
-            "26.영화카툰",
-            "27.영화음악",
-            "28.영화패러디포스터"});
-            this.movieselect.Location = new System.Drawing.Point(611, 199);
-            this.movieselect.Name = "movieselect";
-            this.movieselect.Size = new System.Drawing.Size(121, 20);
-            this.movieselect.TabIndex = 5;
-            // 
-            // uiSymbolButton2
-            // 
-            this.uiSymbolButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiSymbolButton2.FillColor = System.Drawing.Color.Transparent;
-            this.uiSymbolButton2.FillDisableColor = System.Drawing.Color.Transparent;
-            this.uiSymbolButton2.FillHoverColor = System.Drawing.Color.Transparent;
-            this.uiSymbolButton2.FillPressColor = System.Drawing.Color.Transparent;
-            this.uiSymbolButton2.FillSelectedColor = System.Drawing.Color.Transparent;
-            this.uiSymbolButton2.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiSymbolButton2.Location = new System.Drawing.Point(781, 184);
-            this.uiSymbolButton2.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiSymbolButton2.Name = "uiSymbolButton2";
-            this.uiSymbolButton2.RectColor = System.Drawing.Color.Transparent;
-            this.uiSymbolButton2.Size = new System.Drawing.Size(74, 35);
-            this.uiSymbolButton2.Style = Sunny.UI.UIStyle.Custom;
-            this.uiSymbolButton2.Symbol = 61473;
-            this.uiSymbolButton2.TabIndex = 4;
-            this.uiSymbolButton2.Text = "찾기";
-            this.uiSymbolButton2.Click += new System.EventHandler(this.uiSymbolButton2_Click);
-=======
             // panel1
             // 
             this.panel1.Controls.Add(this.uiSymbolLabel6);
@@ -254,7 +199,6 @@ namespace Dashboard.UI
             this.director.Padding = new System.Windows.Forms.Padding(5);
             this.director.Size = new System.Drawing.Size(150, 29);
             this.director.TabIndex = 3;
-            this.director.Text = "감독";
             this.director.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // movietitle
@@ -271,7 +215,6 @@ namespace Dashboard.UI
             this.movietitle.Padding = new System.Windows.Forms.Padding(5);
             this.movietitle.Size = new System.Drawing.Size(150, 29);
             this.movietitle.TabIndex = 3;
-            this.movietitle.Text = "제목";
             this.movietitle.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // actor
@@ -288,7 +231,6 @@ namespace Dashboard.UI
             this.actor.Padding = new System.Windows.Forms.Padding(5);
             this.actor.Size = new System.Drawing.Size(150, 29);
             this.actor.TabIndex = 3;
-            this.actor.Text = "배우";
             this.actor.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // open
@@ -305,7 +247,6 @@ namespace Dashboard.UI
             this.open.Padding = new System.Windows.Forms.Padding(5);
             this.open.Size = new System.Drawing.Size(150, 29);
             this.open.TabIndex = 3;
-            this.open.Text = "개봉일";
             this.open.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // starpoint
@@ -322,7 +263,6 @@ namespace Dashboard.UI
             this.starpoint.Padding = new System.Windows.Forms.Padding(5);
             this.starpoint.Size = new System.Drawing.Size(150, 29);
             this.starpoint.TabIndex = 3;
-            this.starpoint.Text = "평점";
             this.starpoint.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // subtitle
@@ -339,7 +279,6 @@ namespace Dashboard.UI
             this.subtitle.Padding = new System.Windows.Forms.Padding(5);
             this.subtitle.Size = new System.Drawing.Size(150, 29);
             this.subtitle.TabIndex = 3;
-            this.subtitle.Text = "영어제목";
             this.subtitle.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label3
@@ -352,7 +291,6 @@ namespace Dashboard.UI
             this.label3.Size = new System.Drawing.Size(88, 25);
             this.label3.TabIndex = 23;
             this.label3.Text = "영화제목";
->>>>>>> 77d15d23e4b73a2911cb0ba1e5cb49bacb689987
             // 
             // listView1
             // 
@@ -459,25 +397,6 @@ namespace Dashboard.UI
             this.uiSymbolButton1.Text = "찾기";
             this.uiSymbolButton1.Click += new System.EventHandler(this.uiSymbolButton1_Click);
             // 
-<<<<<<< HEAD
-            // querytext
-            // 
-            this.querytext.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.querytext.FillColor = System.Drawing.Color.White;
-            this.querytext.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.querytext.Location = new System.Drawing.Point(611, 162);
-            this.querytext.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.querytext.Maximum = 2147483647D;
-            this.querytext.Minimum = -2147483648D;
-            this.querytext.MinimumSize = new System.Drawing.Size(1, 1);
-            this.querytext.Name = "querytext";
-            this.querytext.Padding = new System.Windows.Forms.Padding(5);
-            this.querytext.Size = new System.Drawing.Size(150, 29);
-            this.querytext.TabIndex = 3;
-            this.querytext.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-=======
->>>>>>> 77d15d23e4b73a2911cb0ba1e5cb49bacb689987
             // Myinfochild1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
