@@ -57,4 +57,3 @@ C:\Users\곽우영\Documents\GitHub\personalproject1\Dashboard\Dashboard\obj\Deb
 C:\Users\곽우영\Documents\GitHub\personalproject1\Dashboard\Dashboard\obj\Debug\Dashboard.csproj.CopyComplete
 C:\Users\곽우영\Documents\GitHub\personalproject1\Dashboard\Dashboard\obj\Debug\Dashboard.exe
 C:\Users\곽우영\Documents\GitHub\personalproject1\Dashboard\Dashboard\obj\Debug\Dashboard.pdb
-C:\Users\곽우영\Documents\GitHub\personalproject1\Dashboard\Dashboard\obj\Debug\Dashboard.UI.Form1.resources

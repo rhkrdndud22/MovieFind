@@ -74,7 +74,7 @@ namespace Dashboard.handler
             }
         }
 
-        public void selectid(Member member)
+        public void selectid(Member member, string id)
         {
             
             
