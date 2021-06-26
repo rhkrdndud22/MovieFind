@@ -57,31 +57,32 @@ namespace Dashboard.handler
                 cmd.Connection = conn;
                 cmd.CommandText = query;
                 cmd.ExecuteNonQuery();
+                MessageBox.Show("가입 해주셔서 감사합니다");
             }
             catch(OracleException )
             {
-                
+                MessageBox.Show("아이디가 중복되어 가입이 불가합니다");
             }
         }
 
         public void selectid(string id)
         {
 
-                string query = "select count(*) FROM member_T where mem_id='" + id + "'";
+                string query = "select mem_id FROM member_T where mem_id='" + id + "'";
 
                 cmd.Connection = conn;
                 cmd.CommandText = query;
 
-                int result = Convert.ToInt32(cmd.ExecuteNonQuery());
 
+            OracleDataReader dr = cmd.ExecuteReader();
 
-                if (result == 1)
+                if (dr.HasRows)
                 {
-                    Console.WriteLine("성공");
+                MessageBox.Show("중복된 ID입니다");
                 }
                 else
                 {
-                    Console.WriteLine("실패");
+                MessageBox.Show("사용가능합니다");
                 }
           
 

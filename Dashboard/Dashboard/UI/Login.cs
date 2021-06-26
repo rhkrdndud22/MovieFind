@@ -35,8 +35,7 @@ namespace Dashboard
             
                 adapter.addReceiptDb();
          
-                MessageBox.Show("회원가입이 완료되었습니다");
-            
+              
 
 
 

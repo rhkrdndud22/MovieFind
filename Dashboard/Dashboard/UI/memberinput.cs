@@ -107,7 +107,7 @@ namespace Dashboard
            
             
                 adapter.addReceiptDb();
-                MessageBox.Show("작성을 완료 하였습니다");
+                
             
           
 
