@@ -87,10 +87,10 @@ namespace Dashboard.handler
           
 
         }
-        public void loginid()
+        public void loginid(string id,string password)
         {
             
-            string query= "select mem_id,mem_password from member_t where mem_id = 'rhkrdnud22'and mem_password = 'rhkr1218'";
+            string query= string.Format("select mem_id,mem_password from member_t where mem_id = '{0}'and mem_password = '{1}'",id,password);
 
             cmd.Connection = conn;
             cmd.CommandText = query;

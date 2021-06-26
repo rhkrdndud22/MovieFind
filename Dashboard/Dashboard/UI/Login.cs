@@ -43,8 +43,9 @@ namespace Dashboard
 
         private void button1_Click(object sender, EventArgs e)
         {
-           
-                adapter.logindb();
+            string id = textBox1.Text;
+                string password = textBox2.Text;
+                adapter.logindb(id,password);
            
             
                 

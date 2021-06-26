@@ -40,9 +40,9 @@ namespace Dashboard.handler
            
 
         }
-        public void logindb()
+        public void logindb(string id,string password)
         {
-            ora.loginid();
+            ora.loginid(id,password);
         }
     }
 }
