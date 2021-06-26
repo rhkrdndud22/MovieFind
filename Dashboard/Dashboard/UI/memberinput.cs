@@ -104,18 +104,23 @@ namespace Dashboard
 
            
                 adapter.addMember(new Member(id, password, name, telF + telB, (birthY + birthM + birthD), Mgenre, Hgenre));
-               
+           
+            
+                adapter.addReceiptDb();
+                MessageBox.Show("작성을 완료 하였습니다");
             
           
-             
-            
-            MessageBox.Show("회원가입이 완료 되었습니다");
+
+
+
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            adapter.selectdb();
+            string name = memID.Text;
+                
+               adapter.selectdb(name);
         }
     }
 }

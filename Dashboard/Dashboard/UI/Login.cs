@@ -30,14 +30,27 @@ namespace Dashboard
 
         private void button2_Click(object sender, EventArgs e)
         {
+            
             new Form3(adapter).ShowDialog();
-            adapter.addReceiptDb();
+            
+                adapter.addReceiptDb();
+         
+                MessageBox.Show("회원가입이 완료되었습니다");
+            
+
+
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form1 f1 = new Form1();
-            f1.Show();
+           
+                adapter.logindb();
+           
+            
+                
+            
+            
         }
     }
 }

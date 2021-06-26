@@ -2,21 +2,26 @@
 using Oracle.ManagedDataAccess.Client;
 using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Windows.Forms;
 namespace Dashboard.handler
 {
     class OracleHandler
     {
+        
+     
+
+        
         const string ORADB =
    "Data Source=(DESCRIPTION=(ADDRESS_LIST=" +
    "(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)" +
    "(PORT=1521)))" +
    "(CONNECT_DATA=(SERVER=DEDICATED)" +
    "(SERVICE_NAME=XE)));" +
-   "User Id=Model;Password=1234;";
+   "User Id=MODEL;Password=1234;";
         OracleConnection conn;
         OracleCommand cmd;
 
@@ -41,23 +46,8 @@ namespace Dashboard.handler
             }
         }
 
-        public void insertDb()
-        {
-            string id = "rhkrdndud11";
-            string password = "rhkr1218";
-            string name = "김우영";
-            string tel = "01021916995";
-            string birth = "19961218";
-            string mgenre = "코미디";
-            string Hgenre = "공포";
-
-            string query = string.Format("insert into member_t values" +
-                "('{0}','{1}','{2}','{3}','{4}','{5}','{6}')", id, password, name, tel, birth, mgenre, Hgenre);
-            cmd.Connection = conn;
-            cmd.CommandText = query;
-            cmd.ExecuteNonQuery();
-
-        }
+        
+        
         public void insertdb(Member member)
         {
             try
@@ -74,25 +64,55 @@ namespace Dashboard.handler
             }
         }
 
-        public void selectid(Member member, string id)
+        public void selectid(string id)
         {
-            
-            
-                string query = string.Format("SELECT count(*) FROM member_T WHERE mem_id = '{0}'", member.Id);
-                
-            
+
+                string query = "select count(*) FROM member_T where mem_id='" + id + "'";
+
                 cmd.Connection = conn;
                 cmd.CommandText = query;
-                cmd.ExecuteNonQuery();
-            if (cmd.ExecuteNonQuery() == 1)
+
+                int result = Convert.ToInt32(cmd.ExecuteNonQuery());
+
+
+                if (result == 1)
+                {
+                    Console.WriteLine("성공");
+                }
+                else
+                {
+                    Console.WriteLine("실패");
+                }
+          
+
+        }
+        public void loginid()
+        {
+            
+            string query= "select mem_id,mem_password from member_t where mem_id = 'rhkrdnud22'and mem_password = 'rhkr1218'";
+
+            cmd.Connection = conn;
+            cmd.CommandText = query;
+            OracleDataReader dr = cmd.ExecuteReader();
+
+            if (dr.HasRows)
             {
-                Console.WriteLine("성공");
+                
+                Form1 f1 = new Form1();
+                f1.Show();
+                
             }
-            else if(cmd.ExecuteNonQuery() == 0)
+            else
             {
-                Console.WriteLine("실패");
+                MessageBox.Show("아이디 또는 비밀번호가 틀립니다");
             }
            
+
+          
+            
+
+            
+
         }
     }
 }

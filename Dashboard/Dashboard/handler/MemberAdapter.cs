@@ -33,13 +33,16 @@ namespace Dashboard.handler
             memberList.Clear();
 
         }
-        public void selectdb()
+        public void selectdb(string id)
         {
-            for (int i = 0; i < memberList.Count; i++)
-            {
-                ora.selectid(memberList[i]);
-            }
-            memberList.Clear();
+          
+                ora.selectid(id);
+           
+
+        }
+        public void logindb()
+        {
+            ora.loginid();
         }
     }
 }
