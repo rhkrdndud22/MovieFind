@@ -1,4 +1,5 @@
 ﻿using Dashboard.handler;
+using Dashboard.UI;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -44,6 +45,7 @@ namespace Dashboard
         private void button1_Click(object sender, EventArgs e)
         {
             string id = textBox1.Text;
+            Myinfochild1.star_id = textBox1.Text;
                 string password = textBox2.Text;
                 adapter.logindb(id,password);
            

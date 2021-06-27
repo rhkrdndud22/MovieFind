@@ -32,7 +32,7 @@ namespace Dashboard.UI
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.uiComboBox1 = new Sunny.UI.UIComboBox();
+            this.starPBox1 = new Sunny.UI.UIComboBox();
             this.uiSymbolButton2 = new Sunny.UI.UISymbolButton();
             this.uiSymbolLabel6 = new Sunny.UI.UISymbolLabel();
             this.uiSymbolLabel5 = new Sunny.UI.UISymbolLabel();
@@ -59,6 +59,7 @@ namespace Dashboard.UI
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.moviesearch = new Sunny.UI.UITextBox();
             this.uiSymbolButton1 = new Sunny.UI.UISymbolButton();
+            this.evoT = new Sunny.UI.UITextBox();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -81,8 +82,9 @@ namespace Dashboard.UI
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.evoT);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.uiComboBox1);
+            this.panel1.Controls.Add(this.starPBox1);
             this.panel1.Controls.Add(this.uiSymbolButton2);
             this.panel1.Controls.Add(this.uiSymbolLabel6);
             this.panel1.Controls.Add(this.uiSymbolLabel5);
@@ -115,11 +117,11 @@ namespace Dashboard.UI
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // uiComboBox1
+            // starPBox1
             // 
-            this.uiComboBox1.FillColor = System.Drawing.Color.White;
-            this.uiComboBox1.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiComboBox1.Items.AddRange(new object[] {
+            this.starPBox1.FillColor = System.Drawing.Color.White;
+            this.starPBox1.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.starPBox1.Items.AddRange(new object[] {
             "0.5",
             "1.0",
             "1.5",
@@ -130,15 +132,15 @@ namespace Dashboard.UI
             "4.0",
             "4.5",
             "5.0"});
-            this.uiComboBox1.Location = new System.Drawing.Point(232, 188);
-            this.uiComboBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiComboBox1.MinimumSize = new System.Drawing.Size(63, 0);
-            this.uiComboBox1.Name = "uiComboBox1";
-            this.uiComboBox1.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
-            this.uiComboBox1.Size = new System.Drawing.Size(150, 29);
-            this.uiComboBox1.TabIndex = 22;
-            this.uiComboBox1.Text = "별점";
-            this.uiComboBox1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.starPBox1.Location = new System.Drawing.Point(190, 154);
+            this.starPBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.starPBox1.MinimumSize = new System.Drawing.Size(63, 0);
+            this.starPBox1.Name = "starPBox1";
+            this.starPBox1.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
+            this.starPBox1.Size = new System.Drawing.Size(132, 29);
+            this.starPBox1.TabIndex = 22;
+            this.starPBox1.Text = "별점";
+            this.starPBox1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // uiSymbolButton2
             // 
@@ -146,15 +148,16 @@ namespace Dashboard.UI
             this.uiSymbolButton2.FillColor = System.Drawing.Color.Transparent;
             this.uiSymbolButton2.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.uiSymbolButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.uiSymbolButton2.Location = new System.Drawing.Point(378, 187);
+            this.uiSymbolButton2.Location = new System.Drawing.Point(326, 154);
             this.uiSymbolButton2.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiSymbolButton2.Name = "uiSymbolButton2";
             this.uiSymbolButton2.RectColor = System.Drawing.Color.Transparent;
-            this.uiSymbolButton2.Size = new System.Drawing.Size(102, 29);
+            this.uiSymbolButton2.Size = new System.Drawing.Size(216, 29);
             this.uiSymbolButton2.Style = Sunny.UI.UIStyle.Custom;
             this.uiSymbolButton2.Symbol = 61445;
             this.uiSymbolButton2.TabIndex = 21;
-            this.uiSymbolButton2.Text = "별점주기";
+            this.uiSymbolButton2.Text = "별점과 한줄평 틍록";
+            this.uiSymbolButton2.Click += new System.EventHandler(this.uiSymbolButton2_Click);
             // 
             // uiSymbolLabel6
             // 
@@ -458,6 +461,22 @@ namespace Dashboard.UI
             this.uiSymbolButton1.Text = "찾기";
             this.uiSymbolButton1.Click += new System.EventHandler(this.uiSymbolButton1_Click);
             // 
+            // evoT
+            // 
+            this.evoT.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.evoT.FillColor = System.Drawing.Color.White;
+            this.evoT.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.evoT.Location = new System.Drawing.Point(190, 193);
+            this.evoT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.evoT.Maximum = 2147483647D;
+            this.evoT.Minimum = -2147483648D;
+            this.evoT.MinimumSize = new System.Drawing.Size(1, 1);
+            this.evoT.Name = "evoT";
+            this.evoT.Padding = new System.Windows.Forms.Padding(5);
+            this.evoT.Size = new System.Drawing.Size(338, 29);
+            this.evoT.TabIndex = 3;
+            this.evoT.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // Myinfochild1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -505,7 +524,8 @@ namespace Dashboard.UI
         private Sunny.UI.UISymbolLabel uiSymbolLabel3;
         private Sunny.UI.UISymbolLabel uiSymbolLabel2;
         private Sunny.UI.UISymbolButton uiSymbolButton2;
-        private Sunny.UI.UIComboBox uiComboBox1;
+        private Sunny.UI.UIComboBox starPBox1;
         private System.Windows.Forms.Button button1;
+        private Sunny.UI.UITextBox evoT;
     }
 }

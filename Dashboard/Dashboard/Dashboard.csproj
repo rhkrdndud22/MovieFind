@@ -72,6 +72,7 @@
     <Compile Include="handler\MemberAdapter.cs" />
     <Compile Include="model\Member.cs" />
     <Compile Include="model\Movie.cs" />
+    <Compile Include="model\Star.cs" />
     <Compile Include="UI\Info.cs">
       <SubType>Form</SubType>
     </Compile>

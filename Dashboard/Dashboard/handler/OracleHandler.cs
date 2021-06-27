@@ -117,6 +117,11 @@ namespace Dashboard.handler
             cmd.CommandText = query;
             cmd.ExecuteNonQuery();
         }
+
+        public void insertstarpoint(Star star)
+        {
+            string query = string.Format("insert into star_t values(STARPOINT_T_SEQ.NEXTVAL," + "'{0}',"+"Movie_T_SEQ.CURRVAL,"+" {1},'{2}')", star.Mem_id,  star.Point, star.Evalution);
+        }
           
             
 

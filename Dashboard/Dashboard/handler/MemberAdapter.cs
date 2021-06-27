@@ -11,6 +11,7 @@ namespace Dashboard.handler
     {
         private List<Member> memberList = new List<Member>();
         private List<Movie> movieList = new List<Movie>();
+        private List<Star> starList = new List<Star>();
         private OracleHandler ora;
 
         public MemberAdapter(OracleHandler ora)
@@ -26,6 +27,10 @@ namespace Dashboard.handler
             movieList.Add(movie);
         }
      
+        public void addstar(Star star)
+        {
+            starList.Add(star);
+        }
         public void addReceiptDb()
         {
             for (int i = 0; i < memberList.Count; i++)
@@ -54,6 +59,15 @@ namespace Dashboard.handler
                 ora.insertmovie(movieList[i]);
             }
             movieList.Clear();
+        }
+
+        public void addstardb()
+        {
+            for (int i = 0; i <starList.Count; i++)
+            {
+                ora.insertstarpoint(starList[i]);
+            }
+            starList.Clear();
         }
     }
 }

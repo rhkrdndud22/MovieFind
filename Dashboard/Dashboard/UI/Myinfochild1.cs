@@ -18,6 +18,7 @@ namespace Dashboard.UI
 
      partial class Myinfochild1 : Form
     {
+        public static string star_id;
         MemberAdapter adapter;
         /* Bitmap noimage = new Bitmap("./noimage.png");*/
 
@@ -96,34 +97,46 @@ namespace Dashboard.UI
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (listView1.SelectedItems.Count == 1)
-            {
+            {   
                 //영화제목
                 movietitle.Text = listView1.SelectedItems[0].SubItems[0].Text;
                 subtitle.Text = listView1.SelectedItems[0].SubItems[3].Text;
                 open.Text = listView1.SelectedItems[0].SubItems[4].Text;
-                if(director.Text != "")
+                director.Text = listView1.SelectedItems[0].SubItems[5].Text;
+                actor.Text = actor.Text = listView1.SelectedItems[0].SubItems[6].Text;
+                string act;
+                string dir;
+                if (director.Text =="")
                 {
-                    director.Text = listView1.SelectedItems[0].SubItems[6].Text.Substring(0, 3);
+                    director.Text = listView1.SelectedItems[0].SubItems[5].Text;
+                    dir= listView1.SelectedItems[0].SubItems[5].Text;
+
                 }
                 else
                 {
-                    actor.Text = listView1.SelectedItems[0].SubItems[6].Text;
+                    director.Text = listView1.SelectedItems[0].SubItems[5].Text.Substring(0, 3);
+                     dir= listView1.SelectedItems[0].SubItems[5].Text.Substring(0, 3);
                 }
-                director.Text = listView1.SelectedItems[0].SubItems[5].Text.Substring(0,3);
-                if (actor.Text != "")
+               
+                
+                if (actor.Text =="")
                 {
-                    actor.Text = listView1.SelectedItems[0].SubItems[6].Text.Substring(0, 3);
-                }
-                else {
                     actor.Text = listView1.SelectedItems[0].SubItems[6].Text;
+                    act= listView1.SelectedItems[0].SubItems[6].Text;
+
+                }
+             
+                
+                else {
+                    actor.Text = listView1.SelectedItems[0].SubItems[6].Text.Substring(0, 3);
+                    act= listView1.SelectedItems[0].SubItems[6].Text.Substring(0, 3);
                 }
                 starpoint.Text = listView1.SelectedItems[0].SubItems[7].Text;
                 string image_path = listView1.SelectedItems[0].SubItems[2].Text;
                 string stars = starpoint.Text;/*string.Join("",starpoint.Text.Split('"'));*/
                 string title = movietitle.Text;
                 
-                string dir = director.Text;
-                string act = actor.Text;
+               
 
                 adapter.addmovie(new Movie(title, stars, dir, act));
                
@@ -144,6 +157,16 @@ namespace Dashboard.UI
         private void button1_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void uiSymbolButton2_Click(object sender, EventArgs e)
+        {   
+            string title = movietitle.Text;
+            double point = Convert.ToDouble(starPBox1.SelectedText);
+            string evol = evoT.Text;
+            string id = star_id;
+            adapter.addstar(new Star(id, title, point, evol));
+            adapter.addstardb();
         }
     }
 }
