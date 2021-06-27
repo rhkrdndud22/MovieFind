@@ -10,6 +10,7 @@ namespace Dashboard.handler
     class MemberAdapter
     {
         private List<Member> memberList = new List<Member>();
+        private List<Movie> movieList = new List<Movie>();
         private OracleHandler ora;
 
         public MemberAdapter(OracleHandler ora)
@@ -20,10 +21,11 @@ namespace Dashboard.handler
         {
             memberList.Add(member);
         }
-        public void viewMember(Member member)
+        public void addmovie(Movie movie)
         {
-            
+            movieList.Add(movie);
         }
+     
         public void addReceiptDb()
         {
             for (int i = 0; i < memberList.Count; i++)
@@ -43,6 +45,15 @@ namespace Dashboard.handler
         public void logindb(string id,string password)
         {
             ora.loginid(id,password);
+        }
+
+        public void addmoviedb()
+        {
+            for (int i = 0; i < movieList.Count; i++)
+            {
+                ora.insertmovie(movieList[i]);
+            }
+            movieList.Clear();
         }
     }
 }

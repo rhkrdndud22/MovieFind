@@ -9,11 +9,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using Dashboard.UI;
+using Dashboard.handler;
 
 namespace Dashboard
 {
     public partial class Form1 : Form
     {
+        OracleHandler ora;
+        MemberAdapter adapter;
         
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
 
@@ -27,8 +30,8 @@ namespace Dashboard
                int nHeightEllipse
 
          );
-        Myinfochild1 child1 = new Myinfochild1();
-        Myinfochild2 child2 = new Myinfochild2();
+     /*   Myinfochild1 child1 = new Myinfochild1();
+        Myinfochild2 child2 = new Myinfochild2();*/
 
         public Form1()
         {
@@ -38,6 +41,9 @@ namespace Dashboard
             pnlNav.Top = btnDashbord.Top;
             pnlNav.Left = btnDashbord.Left;
             btnDashbord.BackColor = Color.FromArgb(46, 51, 73);
+            ora = new OracleHandler();
+            adapter = new MemberAdapter(ora);
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -82,7 +88,8 @@ namespace Dashboard
             pnlNav.Height = searchButton.Height;
             pnlNav.Top = searchButton.Top;
             searchButton.BackColor = Color.FromArgb(46, 51, 73);
-            openChildForm(new Myinfochild1());
+            new Myinfochild1(adapter).ShowDialog();
+           /* openChildForm(new Myinfochild1(adapter));*/
 
 
 
@@ -95,7 +102,7 @@ namespace Dashboard
             pnlNav.Height = btnCalender.Height;
             pnlNav.Top = btnCalender.Top;
             btnCalender.BackColor = Color.FromArgb(46, 51, 73);
-          
+
             openChildForm(new Myinfochild2());
         }
 

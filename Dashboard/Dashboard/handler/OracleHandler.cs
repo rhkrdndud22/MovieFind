@@ -107,13 +107,17 @@ namespace Dashboard.handler
             {
                 MessageBox.Show("아이디 또는 비밀번호가 틀립니다");
             }
+        }
            
-
+        public void insertmovie(Movie movie)
+        {
+            string query = string.Format("insert into movie_t values" +
+                    "('{0}','{1}','{2}','{3}',)", movie.Title, movie.Starpoint, movie.Director, movie.Actor)+"MOVIE_T_SEQ";
+        }
           
             
 
             
 
-        }
     }
 }

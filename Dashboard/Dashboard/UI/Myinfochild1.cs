@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Dashboard.handler;
+using Dashboard.model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,13 +16,20 @@ using System.Xml;
 namespace Dashboard.UI
 {
 
-    public partial class Myinfochild1 : Form
+     partial class Myinfochild1 : Form
     {
-       /* Bitmap noimage = new Bitmap("./noimage.png");*/
+        MemberAdapter adapter;
+        /* Bitmap noimage = new Bitmap("./noimage.png");*/
 
         public Myinfochild1()
         {
             InitializeComponent();
+        }
+
+        public Myinfochild1(MemberAdapter adapter)
+        {
+            InitializeComponent();
+            this.adapter = adapter;
         }
 
         private void uiSymbolButton1_Click(object sender, EventArgs e)
@@ -92,10 +101,35 @@ namespace Dashboard.UI
                 movietitle.Text = listView1.SelectedItems[0].SubItems[0].Text;
                 subtitle.Text = listView1.SelectedItems[0].SubItems[3].Text;
                 open.Text = listView1.SelectedItems[0].SubItems[4].Text;
-                director.Text = listView1.SelectedItems[0].SubItems[5].Text;
-                actor.Text = listView1.SelectedItems[0].SubItems[6].Text;
+                if(director.Text != "")
+                {
+                    director.Text = listView1.SelectedItems[0].SubItems[6].Text.Substring(0, 3);
+                }
+                else
+                {
+                    actor.Text = listView1.SelectedItems[0].SubItems[6].Text;
+                }
+                director.Text = listView1.SelectedItems[0].SubItems[5].Text.Substring(0,3);
+                if (actor.Text != "")
+                {
+                    actor.Text = listView1.SelectedItems[0].SubItems[6].Text.Substring(0, 3);
+                }
+                else {
+                    actor.Text = listView1.SelectedItems[0].SubItems[6].Text;
+                }
                 starpoint.Text = listView1.SelectedItems[0].SubItems[7].Text;
                 string image_path = listView1.SelectedItems[0].SubItems[2].Text;
+                string stars = starpoint.Text;/*string.Join("",starpoint.Text.Split('"'));*/
+                string title = movietitle.Text;
+                
+                string dir = director.Text;
+                string act = actor.Text;
+
+                adapter.addmovie(new Movie(title, stars, dir, act));
+               
+                adapter.addmoviedb();
+
+
                 if (image_path != "")
                 {
                     pictureBox1.Load(image_path);
@@ -107,6 +141,9 @@ namespace Dashboard.UI
             }
         }
 
-      
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
