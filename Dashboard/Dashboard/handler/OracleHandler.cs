@@ -112,7 +112,10 @@ namespace Dashboard.handler
         public void insertmovie(Movie movie)
         {
             string query = string.Format("insert into movie_t values" +
-                    "('{0}','{1}','{2}','{3}',)", movie.Title, movie.Starpoint, movie.Director, movie.Actor)+"MOVIE_T_SEQ";
+                    "('{0}','{1}','{2}','{3}',", movie.Title, movie.Starpoint, movie.Director, movie.Actor)+"MOVIE_T_SEQ.NEXTVAL)";
+            cmd.Connection = conn;
+            cmd.CommandText = query;
+            cmd.ExecuteNonQuery();
         }
           
             
