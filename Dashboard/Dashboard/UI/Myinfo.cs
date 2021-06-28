@@ -75,7 +75,7 @@ namespace Dashboard
             pnlNav.Top = btnDashbord.Top;
             pnlNav.Left = btnDashbord.Left;
             btnDashbord.BackColor = Color.FromArgb(46, 51, 73);
-            openChildForm(new Info());
+            openChildForm(new Info(adapter));
 
 
 

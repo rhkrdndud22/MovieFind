@@ -84,9 +84,15 @@ namespace Dashboard.handler
                 {
                 MessageBox.Show("사용가능합니다");
                 }
-          
-
         }
+        public void selectname(string id)
+        {
+            string query = "select mem_name from member_t where mem_id='" + id + "'";
+            cmd.Connection = conn;
+            cmd.CommandText = query;
+            OracleDataReader dr = cmd.ExecuteReader();
+        }  
+
         public void loginid(string id,string password)
         {
             

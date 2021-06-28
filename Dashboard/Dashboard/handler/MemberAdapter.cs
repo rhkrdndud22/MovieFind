@@ -47,6 +47,10 @@ namespace Dashboard.handler
            
 
         }
+        public void selectdbn(string id)
+        {
+            ora.selectname(id);
+        }
         public void logindb(string id,string password)
         {
             ora.loginid(id,password);

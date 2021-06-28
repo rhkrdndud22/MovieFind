@@ -46,6 +46,7 @@ namespace Dashboard
         {
             string id = textBox1.Text;
             Myinfochild1.star_id = textBox1.Text;
+            Info.name = textBox1.Text;
                 string password = textBox2.Text;
                 adapter.logindb(id,password);
            

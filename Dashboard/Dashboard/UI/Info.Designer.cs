@@ -34,12 +34,13 @@ namespace Dashboard.UI
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.nameL = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.label12 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label14 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -47,7 +48,6 @@ namespace Dashboard.UI
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel6.SuspendLayout();
@@ -77,7 +77,7 @@ namespace Dashboard.UI
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.label5);
             this.panel4.Controls.Add(this.label6);
-            this.panel4.Controls.Add(this.label4);
+            this.panel4.Controls.Add(this.nameL);
             this.panel4.Controls.Add(this.pictureBox2);
             this.panel4.Location = new System.Drawing.Point(9, 67);
             this.panel4.Name = "panel4";
@@ -117,16 +117,16 @@ namespace Dashboard.UI
             this.label6.TabIndex = 0;
             this.label6.Text = "평균 별점";
             // 
-            // label4
+            // nameL
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(117, 20);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 25);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "이름";
+            this.nameL.AutoSize = true;
+            this.nameL.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameL.ForeColor = System.Drawing.Color.White;
+            this.nameL.Location = new System.Drawing.Point(117, 20);
+            this.nameL.Name = "nameL";
+            this.nameL.Size = new System.Drawing.Size(50, 25);
+            this.nameL.TabIndex = 0;
+            this.nameL.Text = "이름";
             // 
             // pictureBox2
             // 
@@ -180,6 +180,20 @@ namespace Dashboard.UI
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(497, 213);
             this.panel7.TabIndex = 20;
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(465, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(29, 23);
+            this.button1.TabIndex = 21;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dataGridView1
             // 
@@ -259,20 +273,6 @@ namespace Dashboard.UI
             this.label9.TabIndex = 0;
             this.label9.Text = "Downloads";
             // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(465, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(29, 23);
-            this.button1.TabIndex = 21;
-            this.button1.Text = "X";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // Info
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -286,6 +286,7 @@ namespace Dashboard.UI
             this.Controls.Add(this.lbltitle);
             this.Name = "Info";
             this.Text = "Info";
+            this.Load += new System.EventHandler(this.Info_Load);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -310,7 +311,7 @@ namespace Dashboard.UI
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label nameL;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.DataGridView dataGridView2;
