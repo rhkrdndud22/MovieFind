@@ -115,17 +115,32 @@ namespace Dashboard.handler
 
             Info.sp = cmd.ExecuteScalar().ToString();
         }
-        public OracleDataReader selectmovie()
+        public DataTable selectmovie()
         {  
            
-            string query = "select movie_title,count(movie_title) cnt from movie_T Group By movie_title order by cnt desc";
+            string query = "select movie_title,count(movie_title) find from movie_T Group By movie_title order by find desc";
             cmd.Connection = conn;
             cmd.CommandText = query;
-            OracleDataReader dr = cmd.ExecuteReader();
+            OracleDataAdapter ada = new OracleDataAdapter();
+            ada.SelectCommand = new OracleCommand(query,conn);
+            DataTable dt = new DataTable();
+            ada.Fill(dt);
+            return dt;
+            
 
-            return dr;
+        }
 
+        public DataTable selectpoint(string id)
+        {
+            string query= "SELECT MOVIE_T.MOVIE_TITLE,Starpoint_T.Starpoint,Starpoint_t.evolation AS FROM MOVIE_T INNER JOIN STARPOINT_T ON MOVIE_T.MOVIE_ID = STARPOINT_t.MOVIE_ID WHERE starpoint_t.mem_ID ='"+id+"'";
 
+            cmd.Connection = conn;
+            cmd.CommandText = query;
+            OracleDataAdapter ada = new OracleDataAdapter();
+            ada.SelectCommand = new OracleCommand(query, conn);
+            DataTable dt = new DataTable();
+            ada.Fill(dt);
+            return dt;
         }
         public void loginid(string id,string password)
         {

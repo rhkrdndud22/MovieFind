@@ -2,6 +2,7 @@
 using Oracle.ManagedDataAccess.Client;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -60,10 +61,16 @@ namespace Dashboard.handler
         {
             ora.selectgenre(id);
         }
-        public OracleDataReader selectmovie()
+        public DataTable selectmovie()
         {
-            OracleDataReader  dr= ora.selectmovie();
-            return dr;
+             DataTable dt=ora.selectmovie();
+            return dt;
+        }
+        public DataTable selectpoint(string name)
+        {
+            
+            DataTable dt = ora.selectpoint(name);
+            return dt;
         }
         public void logindb(string id,string password)
         {
