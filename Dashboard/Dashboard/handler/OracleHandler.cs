@@ -177,7 +177,7 @@ namespace Dashboard.handler
         {
             try
             {
-                string query = string.Format("insert into starpoint_t values(STARPOINT_T_SEQ.NEXTVAL," + "'{0}'," + "(select movie_id from movie_t  where movie_title ='{1}')," + " {2},'{3}')", star.Mem_id, movie_id, star.Point, star.Evalution);
+                string query = string.Format("insert into starpoint_t values(STARPOINT_T_SEQ.NEXTVAL," + "'{0}'," + "(select movie_id from movie_t  where movie_title ='{1}'order by movie_id asc)," + " {2},'{3}')", star.Mem_id, movie_id, star.Point, star.Evalution);
                 cmd.Connection = conn;
                 cmd.CommandText = query;
                 cmd.ExecuteNonQuery();
