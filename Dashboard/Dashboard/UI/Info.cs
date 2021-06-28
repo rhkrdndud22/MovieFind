@@ -15,6 +15,7 @@ namespace Dashboard.UI
     {   public static string name;
         public static string na;
         public static string gen;
+        public static string sp;
         handler.MemberAdapter adapter;
         public Info()
         {
@@ -41,6 +42,8 @@ namespace Dashboard.UI
             nameL.Text = na;
             adapter.selecctgen(name);
             genL.Text = gen;
+            adapter.selectstar(name);
+            starP.Text = sp;
             
 
 

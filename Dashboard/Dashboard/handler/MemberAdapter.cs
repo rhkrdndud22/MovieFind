@@ -51,6 +51,10 @@ namespace Dashboard.handler
         {
             ora.selectname(id);
         }
+        public void selectstar(string id)
+        {
+            ora.selectstar(id);
+        }
         public void selecctgen(string id)
         {
             ora.selectgenre(id);

@@ -14,7 +14,7 @@ namespace Dashboard.handler
     {
 
 
-        public static string na;
+        
         public static string movie_id;
         const string ORADB =
    "Data Source=(DESCRIPTION=(ADDRESS_LIST=" +
@@ -89,7 +89,7 @@ namespace Dashboard.handler
         public void selectname(string id)
         {
             string query = "select mem_name from member_t where mem_id='" + id + "'";
-          
+            cmd.Connection = conn;
             cmd.CommandText = query;
             Info.na=cmd.ExecuteScalar().ToString();
 
@@ -106,6 +106,14 @@ namespace Dashboard.handler
             Info.gen = cmd.ExecuteScalar().ToString();
         }
 
+        public void selectstar(string id)
+        {
+            string query = "select avg(starpoint) from starpoint_t where mem_id='" + id + "'";
+            cmd.Connection = conn;
+            cmd.CommandText = query;
+
+            Info.sp = cmd.ExecuteScalar().ToString();
+        }
         public void loginid(string id,string password)
         {
             
