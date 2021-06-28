@@ -35,7 +35,6 @@ namespace Dashboard.UI
             this.label1 = new System.Windows.Forms.Label();
             this.starP = new System.Windows.Forms.Label();
             this.genL = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.nameL = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -50,6 +49,7 @@ namespace Dashboard.UI
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel6.SuspendLayout();
@@ -76,11 +76,11 @@ namespace Dashboard.UI
             // 
             this.panel4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
+            this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.label2);
             this.panel4.Controls.Add(this.label1);
             this.panel4.Controls.Add(this.starP);
             this.panel4.Controls.Add(this.genL);
-            this.panel4.Controls.Add(this.label6);
             this.panel4.Controls.Add(this.nameL);
             this.panel4.Controls.Add(this.pictureBox2);
             this.panel4.Location = new System.Drawing.Point(9, 67);
@@ -93,7 +93,7 @@ namespace Dashboard.UI
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(-2, 51);
+            this.label2.Location = new System.Drawing.Point(1, 51);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(131, 25);
             this.label2.TabIndex = 6;
@@ -104,7 +104,7 @@ namespace Dashboard.UI
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(30, 20);
+            this.label1.Location = new System.Drawing.Point(49, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(50, 25);
             this.label1.TabIndex = 5;
@@ -113,11 +113,11 @@ namespace Dashboard.UI
             // starP
             // 
             this.starP.AutoSize = true;
-            this.starP.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.starP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.starP.Location = new System.Drawing.Point(156, 88);
+            this.starP.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.starP.ForeColor = System.Drawing.Color.White;
+            this.starP.Location = new System.Drawing.Point(157, 79);
             this.starP.Name = "starP";
-            this.starP.Size = new System.Drawing.Size(64, 17);
+            this.starP.Size = new System.Drawing.Size(93, 25);
             this.starP.TabIndex = 4;
             this.starP.Text = "평균 별점";
             // 
@@ -126,29 +126,18 @@ namespace Dashboard.UI
             this.genL.AutoSize = true;
             this.genL.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.genL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.genL.Location = new System.Drawing.Point(148, 45);
+            this.genL.Location = new System.Drawing.Point(156, 45);
             this.genL.Name = "genL";
             this.genL.Size = new System.Drawing.Size(57, 32);
             this.genL.TabIndex = 1;
             this.genL.Text = "장르";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.label6.Location = new System.Drawing.Point(32, 90);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(64, 17);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "평균 별점";
             // 
             // nameL
             // 
             this.nameL.AutoSize = true;
             this.nameL.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nameL.ForeColor = System.Drawing.Color.White;
-            this.nameL.Location = new System.Drawing.Point(149, 20);
+            this.nameL.Location = new System.Drawing.Point(157, 20);
             this.nameL.Name = "nameL";
             this.nameL.Size = new System.Drawing.Size(50, 25);
             this.nameL.TabIndex = 0;
@@ -157,9 +146,9 @@ namespace Dashboard.UI
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Dashboard.Properties.Resources._1200719;
-            this.pictureBox2.Location = new System.Drawing.Point(102, 88);
+            this.pictureBox2.Location = new System.Drawing.Point(113, 79);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(48, 19);
+            this.pictureBox2.Size = new System.Drawing.Size(48, 25);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
@@ -299,6 +288,17 @@ namespace Dashboard.UI
             this.label9.TabIndex = 0;
             this.label9.Text = "Downloads";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(28, 79);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(93, 25);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "평균 별점";
+            // 
             // Info
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -336,7 +336,6 @@ namespace Dashboard.UI
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label starP;
         private System.Windows.Forms.Label genL;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label nameL;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel6;
@@ -353,5 +352,6 @@ namespace Dashboard.UI
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }

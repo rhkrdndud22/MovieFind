@@ -1,4 +1,5 @@
 ﻿using Dashboard.model;
+using Oracle.ManagedDataAccess.Client;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -55,9 +56,14 @@ namespace Dashboard.handler
         {
             ora.selectstar(id);
         }
-        public void selecctgen(string id)
+        public void selectgen(string id)
         {
             ora.selectgenre(id);
+        }
+        public OracleDataReader selectmovie()
+        {
+            OracleDataReader  dr= ora.selectmovie();
+            return dr;
         }
         public void logindb(string id,string password)
         {

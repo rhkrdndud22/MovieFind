@@ -1,4 +1,5 @@
 ﻿using Dashboard.handler;
+using Oracle.ManagedDataAccess.Client;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -40,13 +41,14 @@ namespace Dashboard.UI
             
              adapter.selectdbn(name);
             nameL.Text = na;
-            adapter.selecctgen(name);
+            adapter.selectgen(name);
             genL.Text = gen;
             adapter.selectstar(name);
             starP.Text = sp;
-            
 
 
+            OracleDataReader dr = adapter.selectmovie();
+            dataGridView2.DataSource = dr;
         }
         
     }

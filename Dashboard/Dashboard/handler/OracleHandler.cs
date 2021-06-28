@@ -3,6 +3,7 @@ using Dashboard.UI;
 using Oracle.ManagedDataAccess.Client;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -113,6 +114,18 @@ namespace Dashboard.handler
             cmd.CommandText = query;
 
             Info.sp = cmd.ExecuteScalar().ToString();
+        }
+        public OracleDataReader selectmovie()
+        {  
+           
+            string query = "select movie_title,count(movie_title) cnt from movie_T Group By movie_title order by cnt desc";
+            cmd.Connection = conn;
+            cmd.CommandText = query;
+            OracleDataReader dr = cmd.ExecuteReader();
+
+            return dr;
+
+
         }
         public void loginid(string id,string password)
         {
