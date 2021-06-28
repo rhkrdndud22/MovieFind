@@ -97,9 +97,11 @@ namespace Dashboard.UI
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (listView1.SelectedItems.Count == 1)
-            {   
+            {
+               
                 //영화제목
                 movietitle.Text = listView1.SelectedItems[0].SubItems[0].Text;
+                OracleHandler.movie_id = movietitle.Text;
                 subtitle.Text = listView1.SelectedItems[0].SubItems[3].Text;
                 open.Text = listView1.SelectedItems[0].SubItems[4].Text;
                 director.Text = listView1.SelectedItems[0].SubItems[5].Text;
@@ -160,13 +162,30 @@ namespace Dashboard.UI
         }
 
         private void uiSymbolButton2_Click(object sender, EventArgs e)
-        {   
-            string title = movietitle.Text;
-            double point = Convert.ToDouble(starPBox1.SelectedText);
+        {
+
             string evol = evoT.Text;
-            string id = star_id;
-            adapter.addstar(new Star(id, title, point, evol));
-            adapter.addstardb();
+            if (evol != "")
+            {
+                if (starPBox1.SelectedText != "")
+                {
+                    string title = movietitle.Text;
+                    double point = Convert.ToDouble(starPBox1.SelectedText);
+
+                    string id = star_id;
+                    adapter.addstar(new Star(id, title, point, evol));
+                    adapter.addstardb();
+                }
+                else
+                {
+                    MessageBox.Show("별점 선택해주세요");
+                }
+               
+            }
+            else
+            {
+                MessageBox.Show("한줄평을 적어주세요");
+            }
         }
     }
 }

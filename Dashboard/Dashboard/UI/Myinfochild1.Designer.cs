@@ -31,6 +31,7 @@ namespace Dashboard.UI
         {
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.evoT = new Sunny.UI.UITextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.starPBox1 = new Sunny.UI.UIComboBox();
             this.uiSymbolButton2 = new Sunny.UI.UISymbolButton();
@@ -59,7 +60,8 @@ namespace Dashboard.UI
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.moviesearch = new Sunny.UI.UITextBox();
             this.uiSymbolButton1 = new Sunny.UI.UISymbolButton();
-            this.evoT = new Sunny.UI.UITextBox();
+            this.uiSymbolLabel7 = new Sunny.UI.UISymbolLabel();
+            this.uiSymbolLabel8 = new Sunny.UI.UISymbolLabel();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -82,6 +84,8 @@ namespace Dashboard.UI
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.uiSymbolLabel8);
+            this.panel1.Controls.Add(this.uiSymbolLabel7);
             this.panel1.Controls.Add(this.evoT);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.starPBox1);
@@ -102,6 +106,22 @@ namespace Dashboard.UI
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(532, 222);
             this.panel1.TabIndex = 21;
+            // 
+            // evoT
+            // 
+            this.evoT.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.evoT.FillColor = System.Drawing.Color.White;
+            this.evoT.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.evoT.Location = new System.Drawing.Point(190, 193);
+            this.evoT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.evoT.Maximum = 2147483647D;
+            this.evoT.Minimum = -2147483648D;
+            this.evoT.MinimumSize = new System.Drawing.Size(1, 1);
+            this.evoT.Name = "evoT";
+            this.evoT.Padding = new System.Windows.Forms.Padding(5);
+            this.evoT.Size = new System.Drawing.Size(338, 29);
+            this.evoT.TabIndex = 3;
+            this.evoT.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // button1
             // 
@@ -139,7 +159,6 @@ namespace Dashboard.UI
             this.starPBox1.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
             this.starPBox1.Size = new System.Drawing.Size(132, 29);
             this.starPBox1.TabIndex = 22;
-            this.starPBox1.Text = "별점";
             this.starPBox1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // uiSymbolButton2
@@ -461,21 +480,35 @@ namespace Dashboard.UI
             this.uiSymbolButton1.Text = "찾기";
             this.uiSymbolButton1.Click += new System.EventHandler(this.uiSymbolButton1_Click);
             // 
-            // evoT
+            // uiSymbolLabel7
             // 
-            this.evoT.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.evoT.FillColor = System.Drawing.Color.White;
-            this.evoT.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.evoT.Location = new System.Drawing.Point(190, 193);
-            this.evoT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.evoT.Maximum = 2147483647D;
-            this.evoT.Minimum = -2147483648D;
-            this.evoT.MinimumSize = new System.Drawing.Size(1, 1);
-            this.evoT.Name = "evoT";
-            this.evoT.Padding = new System.Windows.Forms.Padding(5);
-            this.evoT.Size = new System.Drawing.Size(338, 29);
-            this.evoT.TabIndex = 3;
-            this.evoT.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.uiSymbolLabel7.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.uiSymbolLabel7.ForeColor = System.Drawing.Color.White;
+            this.uiSymbolLabel7.Location = new System.Drawing.Point(84, 154);
+            this.uiSymbolLabel7.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiSymbolLabel7.Name = "uiSymbolLabel7";
+            this.uiSymbolLabel7.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
+            this.uiSymbolLabel7.Size = new System.Drawing.Size(99, 35);
+            this.uiSymbolLabel7.Style = Sunny.UI.UIStyle.Custom;
+            this.uiSymbolLabel7.Symbol = 61445;
+            this.uiSymbolLabel7.SymbolColor = System.Drawing.Color.White;
+            this.uiSymbolLabel7.TabIndex = 23;
+            this.uiSymbolLabel7.Text = "별점";
+            // 
+            // uiSymbolLabel8
+            // 
+            this.uiSymbolLabel8.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.uiSymbolLabel8.ForeColor = System.Drawing.Color.White;
+            this.uiSymbolLabel8.Location = new System.Drawing.Point(84, 193);
+            this.uiSymbolLabel8.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiSymbolLabel8.Name = "uiSymbolLabel8";
+            this.uiSymbolLabel8.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
+            this.uiSymbolLabel8.Size = new System.Drawing.Size(99, 35);
+            this.uiSymbolLabel8.Style = Sunny.UI.UIStyle.Custom;
+            this.uiSymbolLabel8.Symbol = 61504;
+            this.uiSymbolLabel8.SymbolColor = System.Drawing.Color.White;
+            this.uiSymbolLabel8.TabIndex = 24;
+            this.uiSymbolLabel8.Text = "한줄평";
             // 
             // Myinfochild1
             // 
@@ -527,5 +560,7 @@ namespace Dashboard.UI
         private Sunny.UI.UIComboBox starPBox1;
         private System.Windows.Forms.Button button1;
         private Sunny.UI.UITextBox evoT;
+        private Sunny.UI.UISymbolLabel uiSymbolLabel8;
+        private Sunny.UI.UISymbolLabel uiSymbolLabel7;
     }
 }

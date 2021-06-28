@@ -11,10 +11,10 @@ namespace Dashboard.handler
 {
     class OracleHandler
     {
-        
-     
 
-        
+
+
+        public static string movie_id;
         const string ORADB =
    "Data Source=(DESCRIPTION=(ADDRESS_LIST=" +
    "(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)" +
@@ -120,7 +120,18 @@ namespace Dashboard.handler
 
         public void insertstarpoint(Star star)
         {
-            string query = string.Format("insert into star_t values(STARPOINT_T_SEQ.NEXTVAL," + "'{0}',"+"Movie_T_SEQ.CURRVAL,"+" {1},'{2}')", star.Mem_id,  star.Point, star.Evalution);
+            try
+            {
+                string query = string.Format("insert into starpoint_t values(STARPOINT_T_SEQ.NEXTVAL," + "'{0}'," + "(select movie_id from movie_t where movie_title='{1}')," + " {2},'{3}')", star.Mem_id, movie_id, star.Point, star.Evalution);
+                cmd.Connection = conn;
+                cmd.CommandText = query;
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("별점이 등록되었습니다");
+            }
+            catch(OracleException)
+            {
+                MessageBox.Show("이미 별점을 등록한 영화입니다");
+            }
         }
           
             

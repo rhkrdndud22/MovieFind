@@ -88,7 +88,7 @@ namespace Dashboard
             pnlNav.Height = searchButton.Height;
             pnlNav.Top = searchButton.Top;
             searchButton.BackColor = Color.FromArgb(46, 51, 73);
-            Snew Myinfochild1(adapter).ShowDialog();
+            new Myinfochild1(adapter).ShowDialog();
            /* openChildForm(new Myinfochild1(adapter));*/
 
 
