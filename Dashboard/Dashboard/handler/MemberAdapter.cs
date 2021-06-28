@@ -51,6 +51,10 @@ namespace Dashboard.handler
         {
             ora.selectname(id);
         }
+        public void selecctgen(string id)
+        {
+            ora.selectgenre(id);
+        }
         public void logindb(string id,string password)
         {
             ora.loginid(id,password);

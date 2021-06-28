@@ -32,7 +32,7 @@ namespace Dashboard.UI
             this.lbltitle = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.genL = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.nameL = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -48,6 +48,7 @@ namespace Dashboard.UI
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel6.SuspendLayout();
@@ -74,8 +75,9 @@ namespace Dashboard.UI
             // 
             this.panel4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
+            this.panel4.Controls.Add(this.label1);
             this.panel4.Controls.Add(this.label3);
-            this.panel4.Controls.Add(this.label5);
+            this.panel4.Controls.Add(this.genL);
             this.panel4.Controls.Add(this.label6);
             this.panel4.Controls.Add(this.nameL);
             this.panel4.Controls.Add(this.pictureBox2);
@@ -95,16 +97,16 @@ namespace Dashboard.UI
             this.label3.TabIndex = 4;
             this.label3.Text = "평균 별점";
             // 
-            // label5
+            // genL
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label5.Location = new System.Drawing.Point(91, 45);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(107, 32);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "영화 선택";
+            this.genL.AutoSize = true;
+            this.genL.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.genL.Location = new System.Drawing.Point(116, 45);
+            this.genL.Name = "genL";
+            this.genL.Size = new System.Drawing.Size(57, 32);
+            this.genL.TabIndex = 1;
+            this.genL.Text = "장르";
             // 
             // label6
             // 
@@ -273,6 +275,17 @@ namespace Dashboard.UI
             this.label9.TabIndex = 0;
             this.label9.Text = "Downloads";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(66, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(50, 25);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "이름";
+            // 
             // Info
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -309,7 +322,7 @@ namespace Dashboard.UI
         private System.Windows.Forms.Label lbltitle;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label genL;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label nameL;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -325,5 +338,6 @@ namespace Dashboard.UI
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Dashboard.model;
+using Dashboard.UI;
 using Oracle.ManagedDataAccess.Client;
 using System;
 using System.Collections.Generic;
@@ -13,7 +14,7 @@ namespace Dashboard.handler
     {
 
 
-
+        public static string na;
         public static string movie_id;
         const string ORADB =
    "Data Source=(DESCRIPTION=(ADDRESS_LIST=" +
@@ -88,10 +89,22 @@ namespace Dashboard.handler
         public void selectname(string id)
         {
             string query = "select mem_name from member_t where mem_id='" + id + "'";
+          
+            cmd.CommandText = query;
+            Info.na=cmd.ExecuteScalar().ToString();
+
+           
+        }
+        public void selectgenre(string id)
+        {
+           
+            string query = "select mem_mgenre from member_t where mem_id='" + id + "'";
             cmd.Connection = conn;
             cmd.CommandText = query;
-            OracleDataReader dr = cmd.ExecuteReader();
-        }  
+
+          
+            Info.gen = cmd.ExecuteScalar().ToString();
+        }
 
         public void loginid(string id,string password)
         {

@@ -13,6 +13,8 @@ namespace Dashboard.UI
 {
      partial class Info : Form
     {   public static string name;
+        public static string na;
+        public static string gen;
         handler.MemberAdapter adapter;
         public Info()
         {
@@ -34,9 +36,15 @@ namespace Dashboard.UI
 
         private void Info_Load(object sender, EventArgs e)
         {   string st = name;
-             
             
-            adapter.selectdbn(st);
+             adapter.selectdbn(name);
+            nameL.Text = na;
+            adapter.selecctgen(name);
+            genL.Text = gen;
+            
+
+
         }
+        
     }
 }
