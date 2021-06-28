@@ -118,6 +118,7 @@ namespace Dashboard.UI
                 {
                     director.Text = listView1.SelectedItems[0].SubItems[5].Text.Substring(0, 3);
                      dir= listView1.SelectedItems[0].SubItems[5].Text.Substring(0, 3);
+                   
                 }
                
                 
