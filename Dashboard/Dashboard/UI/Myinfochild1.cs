@@ -163,28 +163,37 @@ namespace Dashboard.UI
 
         private void uiSymbolButton2_Click(object sender, EventArgs e)
         {
-
+            string title = movietitle.Text;
             string evol = evoT.Text;
-            if (evol != "")
+            if (title != "")
             {
-                if (starPBox1.SelectedText != "")
-                {
-                    string title = movietitle.Text;
-                    double point = Convert.ToDouble(starPBox1.SelectedText);
 
-                    string id = star_id;
-                    adapter.addstar(new Star(id, title, point, evol));
-                    adapter.addstardb();
+
+                if (evol != "")
+                {
+                    if (starPBox1.SelectedText != "")
+                    {
+
+                        double point = Convert.ToDouble(starPBox1.SelectedText);
+
+                        string id = star_id;
+                        adapter.addstar(new Star(id, title, point, evol));
+                        adapter.addstardb();
+                    }
+                    else
+                    {
+                        MessageBox.Show("별점 선택해주세요");
+                    }
+
                 }
                 else
                 {
-                    MessageBox.Show("별점 선택해주세요");
+                    MessageBox.Show("한줄평을 적어주세요");
                 }
-               
             }
             else
             {
-                MessageBox.Show("한줄평을 적어주세요");
+                MessageBox.Show("영화를 선택해주세요");
             }
         }
     }
