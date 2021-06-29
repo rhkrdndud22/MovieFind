@@ -29,9 +29,8 @@ namespace Dashboard.UI
         /// </summary>
         private void InitializeComponent()
         {
-            this.uiButton1 = new Sunny.UI.UIButton();
+            this.searchB = new Sunny.UI.UIButton();
             this.searchview = new System.Windows.Forms.ListView();
-            this.movieS = new Sunny.UI.UITextBox();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -40,24 +39,31 @@ namespace Dashboard.UI
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.movieS = new Sunny.UI.UITextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.uiComboBox1 = new Sunny.UI.UIComboBox();
             this.uiComboBox2 = new Sunny.UI.UIComboBox();
             this.uiComboBox3 = new Sunny.UI.UIComboBox();
+            this.uiComboBox4 = new Sunny.UI.UIComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // uiButton1
+            // searchB
             // 
-            this.uiButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiButton1.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiButton1.Location = new System.Drawing.Point(181, 12);
-            this.uiButton1.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiButton1.Name = "uiButton1";
-            this.uiButton1.Size = new System.Drawing.Size(100, 35);
-            this.uiButton1.TabIndex = 0;
-            this.uiButton1.Text = "uiButton1";
-            this.uiButton1.Click += new System.EventHandler(this.uiButton1_Click);
+            this.searchB.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.searchB.FillColor = System.Drawing.Color.Transparent;
+            this.searchB.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.searchB.Location = new System.Drawing.Point(181, 53);
+            this.searchB.MinimumSize = new System.Drawing.Size(1, 1);
+            this.searchB.Name = "searchB";
+            this.searchB.RectColor = System.Drawing.Color.Transparent;
+            this.searchB.Size = new System.Drawing.Size(135, 60);
+            this.searchB.Style = Sunny.UI.UIStyle.Custom;
+            this.searchB.TabIndex = 0;
+            this.searchB.Text = "찾기";
+            this.searchB.Click += new System.EventHandler(this.uiButton1_Click);
             // 
             // searchview
             // 
@@ -78,22 +84,6 @@ namespace Dashboard.UI
             this.searchview.UseCompatibleStateImageBehavior = false;
             this.searchview.View = System.Windows.Forms.View.Details;
             this.searchview.SelectedIndexChanged += new System.EventHandler(this.searchview_SelectedIndexChanged);
-            // 
-            // movieS
-            // 
-            this.movieS.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.movieS.FillColor = System.Drawing.Color.White;
-            this.movieS.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.movieS.Location = new System.Drawing.Point(24, 14);
-            this.movieS.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.movieS.Maximum = 2147483647D;
-            this.movieS.Minimum = -2147483648D;
-            this.movieS.MinimumSize = new System.Drawing.Size(1, 1);
-            this.movieS.Name = "movieS";
-            this.movieS.Padding = new System.Windows.Forms.Padding(5);
-            this.movieS.Size = new System.Drawing.Size(150, 29);
-            this.movieS.TabIndex = 2;
-            this.movieS.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // columnHeader1
             // 
@@ -135,12 +125,27 @@ namespace Dashboard.UI
             this.columnHeader8.Text = "평점";
             this.columnHeader8.Width = 187;
             // 
+            // movieS
+            // 
+            this.movieS.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.movieS.FillColor = System.Drawing.Color.White;
+            this.movieS.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.movieS.Location = new System.Drawing.Point(24, 14);
+            this.movieS.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.movieS.Maximum = 2147483647D;
+            this.movieS.Minimum = -2147483648D;
+            this.movieS.MinimumSize = new System.Drawing.Size(1, 1);
+            this.movieS.Name = "movieS";
+            this.movieS.Padding = new System.Windows.Forms.Padding(5);
+            this.movieS.Size = new System.Drawing.Size(150, 29);
+            this.movieS.TabIndex = 2;
+            this.movieS.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(308, 22);
+            this.pictureBox1.Location = new System.Drawing.Point(532, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(399, 117);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.Size = new System.Drawing.Size(159, 146);
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
@@ -148,6 +153,35 @@ namespace Dashboard.UI
             // 
             this.uiComboBox1.FillColor = System.Drawing.Color.White;
             this.uiComboBox1.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.uiComboBox1.Items.AddRange(new object[] {
+            "1.드라마",
+            "2.판타지",
+            "3 서부 ",
+            "4: 공포",
+            "5: 로맨스 ",
+            "6: 모험",
+            "7: 스릴러 ",
+            "8: 느와르",
+            "9: 컬트 ",
+            "10: 다큐멘터리",
+            "11: 코미디 ",
+            "12: 가족",
+            "13: 미스터리 ",
+            "14: 전쟁",
+            "15: 애니메이션 ",
+            "16: 범죄",
+            "17: 뮤지컬 ",
+            "18: SF",
+            "19: 액션",
+            "20: 무협",
+            "21: 에로 ",
+            "22: 서스펜스",
+            "23: 서사 ",
+            "24: 블랙코미디",
+            "25: 실험 ",
+            "26: 영화카툰",
+            "27: 영화음악 ",
+            "28: 영화패러디포스터"});
             this.uiComboBox1.Location = new System.Drawing.Point(24, 53);
             this.uiComboBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiComboBox1.MinimumSize = new System.Drawing.Size(63, 0);
@@ -155,13 +189,21 @@ namespace Dashboard.UI
             this.uiComboBox1.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
             this.uiComboBox1.Size = new System.Drawing.Size(150, 29);
             this.uiComboBox1.TabIndex = 4;
-            this.uiComboBox1.Text = "uiComboBox1";
+            this.uiComboBox1.Text = "장르";
             this.uiComboBox1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // uiComboBox2
             // 
             this.uiComboBox2.FillColor = System.Drawing.Color.White;
             this.uiComboBox2.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.uiComboBox2.Items.AddRange(new object[] {
+            "KR 한국",
+            "JP 일본  ",
+            "US 미국 ",
+            "HK 홍콩 ",
+            "GB 영국",
+            "FR 프랑스  ",
+            "ETC 기타 "});
             this.uiComboBox2.Location = new System.Drawing.Point(24, 92);
             this.uiComboBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiComboBox2.MinimumSize = new System.Drawing.Size(63, 0);
@@ -169,13 +211,22 @@ namespace Dashboard.UI
             this.uiComboBox2.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
             this.uiComboBox2.Size = new System.Drawing.Size(150, 29);
             this.uiComboBox2.TabIndex = 5;
-            this.uiComboBox2.Text = "uiComboBox2";
+            this.uiComboBox2.Text = "나라";
             this.uiComboBox2.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // uiComboBox3
             // 
             this.uiComboBox3.FillColor = System.Drawing.Color.White;
             this.uiComboBox3.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.uiComboBox3.Items.AddRange(new object[] {
+            "1950",
+            "1960",
+            "1970",
+            "1980",
+            "1990",
+            "2000",
+            "2010",
+            "2020"});
             this.uiComboBox3.Location = new System.Drawing.Point(24, 129);
             this.uiComboBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiComboBox3.MinimumSize = new System.Drawing.Size(63, 0);
@@ -183,8 +234,52 @@ namespace Dashboard.UI
             this.uiComboBox3.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
             this.uiComboBox3.Size = new System.Drawing.Size(150, 29);
             this.uiComboBox3.TabIndex = 5;
-            this.uiComboBox3.Text = "uiComboBox3";
+            this.uiComboBox3.Text = "연도";
             this.uiComboBox3.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // uiComboBox4
+            // 
+            this.uiComboBox4.FillColor = System.Drawing.Color.White;
+            this.uiComboBox4.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.uiComboBox4.Items.AddRange(new object[] {
+            "1960",
+            "1970",
+            "1980",
+            "1990",
+            "2000",
+            "2010",
+            "2020"});
+            this.uiComboBox4.Location = new System.Drawing.Point(225, 129);
+            this.uiComboBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiComboBox4.MinimumSize = new System.Drawing.Size(63, 0);
+            this.uiComboBox4.Name = "uiComboBox4";
+            this.uiComboBox4.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
+            this.uiComboBox4.Size = new System.Drawing.Size(150, 29);
+            this.uiComboBox4.TabIndex = 6;
+            this.uiComboBox4.Text = "연도";
+            this.uiComboBox4.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(178, 140);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(40, 16);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "에서";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(382, 140);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(40, 16);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "까지";
             // 
             // Myinfochild2
             // 
@@ -192,13 +287,16 @@ namespace Dashboard.UI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(855, 510);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.uiComboBox4);
             this.Controls.Add(this.uiComboBox2);
             this.Controls.Add(this.uiComboBox3);
             this.Controls.Add(this.uiComboBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.movieS);
             this.Controls.Add(this.searchview);
-            this.Controls.Add(this.uiButton1);
+            this.Controls.Add(this.searchB);
+            this.Controls.Add(this.label1);
             this.Name = "Myinfochild2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Form1";
@@ -210,7 +308,7 @@ namespace Dashboard.UI
 
         #endregion
 
-        private Sunny.UI.UIButton uiButton1;
+        private Sunny.UI.UIButton searchB;
         private System.Windows.Forms.ListView searchview;
         private Sunny.UI.UITextBox movieS;
         private System.Windows.Forms.ColumnHeader columnHeader1;
@@ -225,5 +323,8 @@ namespace Dashboard.UI
         private Sunny.UI.UIComboBox uiComboBox1;
         private Sunny.UI.UIComboBox uiComboBox2;
         private Sunny.UI.UIComboBox uiComboBox3;
+        private Sunny.UI.UIComboBox uiComboBox4;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

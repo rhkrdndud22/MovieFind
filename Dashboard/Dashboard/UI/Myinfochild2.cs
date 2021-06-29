@@ -15,7 +15,7 @@ namespace Dashboard.UI
 {
     public partial class Myinfochild2 : Form
     {
-        Bitmap noimage = new Bitmap("./noimage.png");
+       /* Bitmap noimage = new Bitmap("./noimage.png");*/
         public Myinfochild2()
         {
             InitializeComponent();
@@ -34,8 +34,11 @@ namespace Dashboard.UI
                 }
                 else
                 {
-                    string query = "https://openapi.naver.com/v1/search/movie.xml?query=" + movieS.Text+ "&display=100&start=1&genre=5&contry=(JP)";
-                  
+                try
+                {
+                    string query = "https://openapi.naver.com/v1/search/movie.xml?query=" + movieS.Text + "&display=100&start=1&genre=" + uiComboBox1.SelectedText + "&country=" + uiComboBox2.SelectedText.Substring(0, 2) + "&yearfrom=" + uiComboBox3.Text + "&yearto=" + uiComboBox4.Text;
+
+                    
 
                     string client_id = "X2_dnHMYL3zNMJNaj1Mq";
                     string client_secret = "icRzvX9KSX";
@@ -86,6 +89,11 @@ namespace Dashboard.UI
                         //richTextBox1.Text += xn.ChildNodes[i]["title"].InnerText.Replace("<b>", "").Replace("</b>", "") + "\n";
                     }
                 }
+                catch
+                {
+                    MessageBox.Show("연도를 제대로 입력해주세요");
+                }
+               }
             
         }
 
@@ -100,7 +108,7 @@ namespace Dashboard.UI
                 }
                 else
                 {
-                    pictureBox1.Image = noimage;
+                    pictureBox1.Image = null;
                 }
                 image_path = " ";
             }
