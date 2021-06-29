@@ -20,7 +20,7 @@ namespace Dashboard.UI
     {
         public static string star_id;
         MemberAdapter adapter;
-        /* Bitmap noimage = new Bitmap("./noimage.png");*/
+        Bitmap noimage = new Bitmap("./noimage.png");
 
         public Myinfochild1()
         {

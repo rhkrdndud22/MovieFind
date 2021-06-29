@@ -31,6 +31,8 @@ namespace Dashboard.UI
         {
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.uiSymbolLabel8 = new Sunny.UI.UISymbolLabel();
+            this.uiSymbolLabel7 = new Sunny.UI.UISymbolLabel();
             this.evoT = new Sunny.UI.UITextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.starPBox1 = new Sunny.UI.UIComboBox();
@@ -60,8 +62,6 @@ namespace Dashboard.UI
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.moviesearch = new Sunny.UI.UITextBox();
             this.uiSymbolButton1 = new Sunny.UI.UISymbolButton();
-            this.uiSymbolLabel7 = new Sunny.UI.UISymbolLabel();
-            this.uiSymbolLabel8 = new Sunny.UI.UISymbolLabel();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -106,6 +106,36 @@ namespace Dashboard.UI
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(532, 222);
             this.panel1.TabIndex = 21;
+            // 
+            // uiSymbolLabel8
+            // 
+            this.uiSymbolLabel8.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.uiSymbolLabel8.ForeColor = System.Drawing.Color.White;
+            this.uiSymbolLabel8.Location = new System.Drawing.Point(84, 193);
+            this.uiSymbolLabel8.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiSymbolLabel8.Name = "uiSymbolLabel8";
+            this.uiSymbolLabel8.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
+            this.uiSymbolLabel8.Size = new System.Drawing.Size(99, 35);
+            this.uiSymbolLabel8.Style = Sunny.UI.UIStyle.Custom;
+            this.uiSymbolLabel8.Symbol = 61504;
+            this.uiSymbolLabel8.SymbolColor = System.Drawing.Color.White;
+            this.uiSymbolLabel8.TabIndex = 24;
+            this.uiSymbolLabel8.Text = "한줄평";
+            // 
+            // uiSymbolLabel7
+            // 
+            this.uiSymbolLabel7.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.uiSymbolLabel7.ForeColor = System.Drawing.Color.White;
+            this.uiSymbolLabel7.Location = new System.Drawing.Point(84, 154);
+            this.uiSymbolLabel7.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiSymbolLabel7.Name = "uiSymbolLabel7";
+            this.uiSymbolLabel7.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
+            this.uiSymbolLabel7.Size = new System.Drawing.Size(99, 35);
+            this.uiSymbolLabel7.Style = Sunny.UI.UIStyle.Custom;
+            this.uiSymbolLabel7.Symbol = 61445;
+            this.uiSymbolLabel7.SymbolColor = System.Drawing.Color.White;
+            this.uiSymbolLabel7.TabIndex = 23;
+            this.uiSymbolLabel7.Text = "별점";
             // 
             // evoT
             // 
@@ -480,36 +510,6 @@ namespace Dashboard.UI
             this.uiSymbolButton1.Text = "찾기";
             this.uiSymbolButton1.Click += new System.EventHandler(this.uiSymbolButton1_Click);
             // 
-            // uiSymbolLabel7
-            // 
-            this.uiSymbolLabel7.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiSymbolLabel7.ForeColor = System.Drawing.Color.White;
-            this.uiSymbolLabel7.Location = new System.Drawing.Point(84, 154);
-            this.uiSymbolLabel7.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiSymbolLabel7.Name = "uiSymbolLabel7";
-            this.uiSymbolLabel7.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
-            this.uiSymbolLabel7.Size = new System.Drawing.Size(99, 35);
-            this.uiSymbolLabel7.Style = Sunny.UI.UIStyle.Custom;
-            this.uiSymbolLabel7.Symbol = 61445;
-            this.uiSymbolLabel7.SymbolColor = System.Drawing.Color.White;
-            this.uiSymbolLabel7.TabIndex = 23;
-            this.uiSymbolLabel7.Text = "별점";
-            // 
-            // uiSymbolLabel8
-            // 
-            this.uiSymbolLabel8.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiSymbolLabel8.ForeColor = System.Drawing.Color.White;
-            this.uiSymbolLabel8.Location = new System.Drawing.Point(84, 193);
-            this.uiSymbolLabel8.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiSymbolLabel8.Name = "uiSymbolLabel8";
-            this.uiSymbolLabel8.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
-            this.uiSymbolLabel8.Size = new System.Drawing.Size(99, 35);
-            this.uiSymbolLabel8.Style = Sunny.UI.UIStyle.Custom;
-            this.uiSymbolLabel8.Symbol = 61504;
-            this.uiSymbolLabel8.SymbolColor = System.Drawing.Color.White;
-            this.uiSymbolLabel8.TabIndex = 24;
-            this.uiSymbolLabel8.Text = "한줄평";
-            // 
             // Myinfochild1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -519,7 +519,7 @@ namespace Dashboard.UI
             this.Controls.Add(this.panel4);
             this.Name = "Myinfochild1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form4";
+            this.Text = "searchform";
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel1.ResumeLayout(false);

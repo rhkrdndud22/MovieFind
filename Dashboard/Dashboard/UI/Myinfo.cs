@@ -17,7 +17,8 @@ namespace Dashboard
     {
         OracleHandler ora;
         MemberAdapter adapter;
-        
+        public static string name;
+        public static string u;
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
 
         private static extern IntPtr CreateRoundRectRgn
@@ -48,11 +49,11 @@ namespace Dashboard
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            adapter.selectdbn(name);
+            userL.Text = u;
 
 
 
-        
         }
 
         private Form activeForm = null;
@@ -106,12 +107,7 @@ namespace Dashboard
             openChildForm(new Myinfochild2());
         }
 
-        private void btnContactUs_Click(object sender, EventArgs e)
-        {
-            pnlNav.Height = btnContactUs.Height;
-            pnlNav.Top = btnContactUs.Top;
-            btnContactUs.BackColor = Color.FromArgb(46, 51, 73);
-        }
+        
 
         private void btnsettings_Click(object sender, EventArgs e)
         {
@@ -137,10 +133,7 @@ namespace Dashboard
             btnCalender.BackColor = Color.FromArgb(24, 30, 54);
         }
 
-        private void btnContactUs_Leave(object sender, EventArgs e)
-        {
-            btnContactUs.BackColor = Color.FromArgb(24, 30, 54);
-        }
+     
 
         private void btnsettings_Leave(object sender, EventArgs e)
         {

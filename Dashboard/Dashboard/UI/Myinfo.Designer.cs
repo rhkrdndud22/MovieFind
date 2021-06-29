@@ -31,7 +31,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnlNav = new System.Windows.Forms.Panel();
             this.btnsettings = new System.Windows.Forms.Button();
-            this.btnContactUs = new System.Windows.Forms.Button();
             this.btnCalender = new System.Windows.Forms.Button();
             this.searchButton = new System.Windows.Forms.Button();
             this.btnDashbord = new System.Windows.Forms.Button();
@@ -39,7 +38,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panelChildForm = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.userL = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.panelChild = new System.Windows.Forms.Panel();
@@ -56,7 +55,6 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
             this.panel1.Controls.Add(this.pnlNav);
             this.panel1.Controls.Add(this.btnsettings);
-            this.panel1.Controls.Add(this.btnContactUs);
             this.panel1.Controls.Add(this.btnCalender);
             this.panel1.Controls.Add(this.searchButton);
             this.panel1.Controls.Add(this.btnDashbord);
@@ -93,24 +91,6 @@
             this.btnsettings.Click += new System.EventHandler(this.btnsettings_Click);
             this.btnsettings.Leave += new System.EventHandler(this.btnsettings_Leave);
             // 
-            // btnContactUs
-            // 
-            this.btnContactUs.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnContactUs.FlatAppearance.BorderSize = 0;
-            this.btnContactUs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnContactUs.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnContactUs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnContactUs.Image = global::Dashboard.Properties.Resources.Conact;
-            this.btnContactUs.Location = new System.Drawing.Point(0, 267);
-            this.btnContactUs.Name = "btnContactUs";
-            this.btnContactUs.Size = new System.Drawing.Size(217, 39);
-            this.btnContactUs.TabIndex = 1;
-            this.btnContactUs.Text = "Contact Us";
-            this.btnContactUs.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnContactUs.UseVisualStyleBackColor = true;
-            this.btnContactUs.Click += new System.EventHandler(this.btnContactUs_Click);
-            this.btnContactUs.Leave += new System.EventHandler(this.btnContactUs_Leave);
-            // 
             // btnCalender
             // 
             this.btnCalender.Dock = System.Windows.Forms.DockStyle.Top;
@@ -119,11 +99,11 @@
             this.btnCalender.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCalender.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btnCalender.Image = global::Dashboard.Properties.Resources.calendar;
-            this.btnCalender.Location = new System.Drawing.Point(0, 220);
+            this.btnCalender.Location = new System.Drawing.Point(0, 363);
             this.btnCalender.Name = "btnCalender";
-            this.btnCalender.Size = new System.Drawing.Size(217, 47);
+            this.btnCalender.Size = new System.Drawing.Size(217, 111);
             this.btnCalender.TabIndex = 1;
-            this.btnCalender.Text = "Calender";
+            this.btnCalender.Text = "조건 검색";
             this.btnCalender.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnCalender.UseVisualStyleBackColor = true;
             this.btnCalender.Click += new System.EventHandler(this.btnCalender_Click);
@@ -137,9 +117,9 @@
             this.searchButton.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.searchButton.Image = global::Dashboard.Properties.Resources.Conact;
-            this.searchButton.Location = new System.Drawing.Point(0, 181);
+            this.searchButton.Location = new System.Drawing.Point(0, 229);
             this.searchButton.Name = "searchButton";
-            this.searchButton.Size = new System.Drawing.Size(217, 39);
+            this.searchButton.Size = new System.Drawing.Size(217, 134);
             this.searchButton.TabIndex = 1;
             this.searchButton.Text = "검색";
             this.searchButton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -157,7 +137,7 @@
             this.btnDashbord.Image = global::Dashboard.Properties.Resources.settings;
             this.btnDashbord.Location = new System.Drawing.Point(0, 142);
             this.btnDashbord.Name = "btnDashbord";
-            this.btnDashbord.Size = new System.Drawing.Size(217, 39);
+            this.btnDashbord.Size = new System.Drawing.Size(217, 87);
             this.btnDashbord.TabIndex = 1;
             this.btnDashbord.Text = "내 정보";
             this.btnDashbord.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -170,7 +150,7 @@
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.panelChildForm);
             this.panel2.Controls.Add(this.panel3);
-            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.userL);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
@@ -199,15 +179,15 @@
             this.panel3.Size = new System.Drawing.Size(818, 371);
             this.panel3.TabIndex = 13;
             // 
-            // label1
+            // userL
             // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label1.Location = new System.Drawing.Point(64, 81);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 41);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "User Name";
+            this.userL.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.userL.Location = new System.Drawing.Point(64, 81);
+            this.userL.Name = "userL";
+            this.userL.Size = new System.Drawing.Size(86, 41);
+            this.userL.TabIndex = 1;
+            this.userL.Text = "User Name";
             // 
             // pictureBox1
             // 
@@ -279,10 +259,9 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnDashbord;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label userL;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnsettings;
-        private System.Windows.Forms.Button btnContactUs;
         private System.Windows.Forms.Button btnCalender;
         private System.Windows.Forms.Button searchButton;
         private System.Windows.Forms.Panel pnlNav;
