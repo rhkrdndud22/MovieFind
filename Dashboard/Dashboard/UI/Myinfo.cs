@@ -90,7 +90,7 @@ namespace Dashboard
             pnlNav.Top = searchButton.Top;
             searchButton.BackColor = Color.FromArgb(46, 51, 73);
            
-            openChildForm(new Myinfochild1(adapter));
+            openChildForm(new Search(adapter));
 
 
 
@@ -104,7 +104,7 @@ namespace Dashboard
             pnlNav.Top = btnCalender.Top;
             btnCalender.BackColor = Color.FromArgb(46, 51, 73);
 
-            openChildForm(new Myinfochild2());
+            openChildForm(new Conditionsearch());
         }
 
         

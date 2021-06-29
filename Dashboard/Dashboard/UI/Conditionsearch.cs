@@ -13,10 +13,10 @@ using System.Xml;
 
 namespace Dashboard.UI
 {
-    public partial class Myinfochild2 : Form
+    public partial class Conditionsearch : Form
     {
        /* Bitmap noimage = new Bitmap("./noimage.png");*/
-        public Myinfochild2()
+        public Conditionsearch()
         {
             InitializeComponent();
             
@@ -36,7 +36,7 @@ namespace Dashboard.UI
                 {
                 try
                 {
-                    string query = "https://openapi.naver.com/v1/search/movie.xml?query=" + movieS.Text + "&display=100&start=1&genre=" + uiComboBox1.SelectedText + "&country=" + uiComboBox2.SelectedText.Substring(0, 2) + "&yearfrom=" + uiComboBox3.Text + "&yearto=" + uiComboBox4.Text;
+                    string query = "https://openapi.naver.com/v1/search/movie.xml?query=" + movieS.Text + "&display=100&start=1&genre=" + genreBox.SelectedText + "&country=" + CountryBox.SelectedText.Substring(0, 2) + "&yearfrom=" + yearFBox.Text + "&yearto=" + yearABox.Text;
 
                     
 
@@ -104,11 +104,11 @@ namespace Dashboard.UI
                 string image_path = searchview.SelectedItems[0].SubItems[2].Text;
                 if (image_path != "")
                 {
-                    pictureBox1.Load(image_path);
+                    movieimage.Load(image_path);
                 }
                 else
                 {
-                    pictureBox1.Image = null;
+                    movieimage.Image = null;
                 }
                 image_path = " ";
             }

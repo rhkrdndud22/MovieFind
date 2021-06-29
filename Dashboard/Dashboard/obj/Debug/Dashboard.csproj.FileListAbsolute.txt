@@ -46,12 +46,10 @@ C:\Users\곽우영\Documents\GitHub\personalproject1\Dashboard\Dashboard\bin\Deb
 C:\Users\곽우영\Documents\GitHub\personalproject1\Dashboard\Dashboard\bin\Debug\WinFormAnimation.xml
 C:\Users\곽우영\Documents\GitHub\personalproject1\Dashboard\Dashboard\obj\Debug\Dashboard.csproj.AssemblyReference.cache
 C:\Users\곽우영\Documents\GitHub\personalproject1\Dashboard\Dashboard\obj\Debug\Dashboard.UI.Info.resources
-C:\Users\곽우영\Documents\GitHub\personalproject1\Dashboard\Dashboard\obj\Debug\Dashboard.UI.Myinfochild1.resources
 C:\Users\곽우영\Documents\GitHub\personalproject1\Dashboard\Dashboard\obj\Debug\Dashboard.Form1.resources
 C:\Users\곽우영\Documents\GitHub\personalproject1\Dashboard\Dashboard\obj\Debug\Dashboard.Form2.resources
 C:\Users\곽우영\Documents\GitHub\personalproject1\Dashboard\Dashboard\obj\Debug\Dashboard.Form3.resources
 C:\Users\곽우영\Documents\GitHub\personalproject1\Dashboard\Dashboard\obj\Debug\Dashboard.Properties.Resources.resources
-C:\Users\곽우영\Documents\GitHub\personalproject1\Dashboard\Dashboard\obj\Debug\Dashboard.UI.Myinfochild2.resources
 C:\Users\곽우영\Documents\GitHub\personalproject1\Dashboard\Dashboard\obj\Debug\Dashboard.csproj.GenerateResource.cache
 C:\Users\곽우영\Documents\GitHub\personalproject1\Dashboard\Dashboard\obj\Debug\Dashboard.csproj.CoreCompileInputs.cache
 C:\Users\곽우영\Documents\GitHub\personalproject1\Dashboard\Dashboard\obj\Debug\Dashboard.csproj.CopyComplete
@@ -80,3 +78,5 @@ C:\Users\KB\Desktop\personalproject1\Dashboard\Dashboard\bin\Debug\WinFormAnimat
 C:\Users\KB\Desktop\personalproject1\Dashboard\Dashboard\bin\Debug\CircularProgressBar.xml
 C:\Users\KB\Desktop\personalproject1\Dashboard\Dashboard\bin\Debug\WinFormAnimation.xml
 C:\Users\KB\Desktop\personalproject1\Dashboard\Dashboard\obj\Debug\Dashboard.csproj.CopyComplete
+C:\Users\곽우영\Documents\GitHub\personalproject1\Dashboard\Dashboard\obj\Debug\Dashboard.UI.Search.resources
+C:\Users\곽우영\Documents\GitHub\personalproject1\Dashboard\Dashboard\obj\Debug\Dashboard.UI.Conditionsearch.resources

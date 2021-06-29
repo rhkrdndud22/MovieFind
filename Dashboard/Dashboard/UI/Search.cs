@@ -16,18 +16,18 @@ using System.Xml;
 namespace Dashboard.UI
 {
 
-     partial class Myinfochild1 : Form
+     partial class Search : Form
     {
         public static string star_id;
         MemberAdapter adapter;
         
 
-        public Myinfochild1()
+        public Search()
         {
             InitializeComponent();
         }
 
-        public Myinfochild1(MemberAdapter adapter)
+        public Search(MemberAdapter adapter)
         {
             InitializeComponent();
             this.adapter = adapter;

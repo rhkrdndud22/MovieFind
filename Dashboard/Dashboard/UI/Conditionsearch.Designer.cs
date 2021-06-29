@@ -1,7 +1,7 @@
 ﻿
 namespace Dashboard.UI
 {
-    partial class Myinfochild2
+    partial class Conditionsearch
     {
         /// <summary>
         /// Required designer variable.
@@ -40,14 +40,14 @@ namespace Dashboard.UI
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.movieS = new Sunny.UI.UITextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.uiComboBox1 = new Sunny.UI.UIComboBox();
-            this.uiComboBox2 = new Sunny.UI.UIComboBox();
-            this.uiComboBox3 = new Sunny.UI.UIComboBox();
-            this.uiComboBox4 = new Sunny.UI.UIComboBox();
+            this.movieimage = new System.Windows.Forms.PictureBox();
+            this.genreBox = new Sunny.UI.UIComboBox();
+            this.CountryBox = new Sunny.UI.UIComboBox();
+            this.yearFBox = new Sunny.UI.UIComboBox();
+            this.yearABox = new Sunny.UI.UIComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.movieimage)).BeginInit();
             this.SuspendLayout();
             // 
             // searchB
@@ -141,20 +141,20 @@ namespace Dashboard.UI
             this.movieS.TabIndex = 2;
             this.movieS.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // pictureBox1
+            // movieimage
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(532, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(159, 146);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
+            this.movieimage.Location = new System.Drawing.Point(532, 12);
+            this.movieimage.Name = "movieimage";
+            this.movieimage.Size = new System.Drawing.Size(159, 146);
+            this.movieimage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.movieimage.TabIndex = 3;
+            this.movieimage.TabStop = false;
             // 
-            // uiComboBox1
+            // genreBox
             // 
-            this.uiComboBox1.FillColor = System.Drawing.Color.White;
-            this.uiComboBox1.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiComboBox1.Items.AddRange(new object[] {
+            this.genreBox.FillColor = System.Drawing.Color.White;
+            this.genreBox.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.genreBox.Items.AddRange(new object[] {
             "1.드라마",
             "2.판타지",
             "3 서부 ",
@@ -183,21 +183,21 @@ namespace Dashboard.UI
             "26: 영화카툰",
             "27: 영화음악 ",
             "28: 영화패러디포스터"});
-            this.uiComboBox1.Location = new System.Drawing.Point(24, 53);
-            this.uiComboBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiComboBox1.MinimumSize = new System.Drawing.Size(63, 0);
-            this.uiComboBox1.Name = "uiComboBox1";
-            this.uiComboBox1.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
-            this.uiComboBox1.Size = new System.Drawing.Size(150, 29);
-            this.uiComboBox1.TabIndex = 4;
-            this.uiComboBox1.Text = "장르";
-            this.uiComboBox1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.genreBox.Location = new System.Drawing.Point(24, 53);
+            this.genreBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.genreBox.MinimumSize = new System.Drawing.Size(63, 0);
+            this.genreBox.Name = "genreBox";
+            this.genreBox.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
+            this.genreBox.Size = new System.Drawing.Size(150, 29);
+            this.genreBox.TabIndex = 4;
+            this.genreBox.Text = "장르";
+            this.genreBox.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // uiComboBox2
+            // CountryBox
             // 
-            this.uiComboBox2.FillColor = System.Drawing.Color.White;
-            this.uiComboBox2.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiComboBox2.Items.AddRange(new object[] {
+            this.CountryBox.FillColor = System.Drawing.Color.White;
+            this.CountryBox.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.CountryBox.Items.AddRange(new object[] {
             "KR 한국",
             "JP 일본  ",
             "US 미국 ",
@@ -205,21 +205,21 @@ namespace Dashboard.UI
             "GB 영국",
             "FR 프랑스  ",
             "ETC 기타 "});
-            this.uiComboBox2.Location = new System.Drawing.Point(24, 92);
-            this.uiComboBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiComboBox2.MinimumSize = new System.Drawing.Size(63, 0);
-            this.uiComboBox2.Name = "uiComboBox2";
-            this.uiComboBox2.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
-            this.uiComboBox2.Size = new System.Drawing.Size(150, 29);
-            this.uiComboBox2.TabIndex = 5;
-            this.uiComboBox2.Text = "나라";
-            this.uiComboBox2.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.CountryBox.Location = new System.Drawing.Point(24, 92);
+            this.CountryBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.CountryBox.MinimumSize = new System.Drawing.Size(63, 0);
+            this.CountryBox.Name = "CountryBox";
+            this.CountryBox.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
+            this.CountryBox.Size = new System.Drawing.Size(150, 29);
+            this.CountryBox.TabIndex = 5;
+            this.CountryBox.Text = "나라";
+            this.CountryBox.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // uiComboBox3
+            // yearFBox
             // 
-            this.uiComboBox3.FillColor = System.Drawing.Color.White;
-            this.uiComboBox3.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiComboBox3.Items.AddRange(new object[] {
+            this.yearFBox.FillColor = System.Drawing.Color.White;
+            this.yearFBox.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.yearFBox.Items.AddRange(new object[] {
             "1950",
             "1960",
             "1970",
@@ -228,21 +228,21 @@ namespace Dashboard.UI
             "2000",
             "2010",
             "2020"});
-            this.uiComboBox3.Location = new System.Drawing.Point(24, 129);
-            this.uiComboBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiComboBox3.MinimumSize = new System.Drawing.Size(63, 0);
-            this.uiComboBox3.Name = "uiComboBox3";
-            this.uiComboBox3.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
-            this.uiComboBox3.Size = new System.Drawing.Size(150, 29);
-            this.uiComboBox3.TabIndex = 5;
-            this.uiComboBox3.Text = "연도";
-            this.uiComboBox3.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.yearFBox.Location = new System.Drawing.Point(24, 129);
+            this.yearFBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.yearFBox.MinimumSize = new System.Drawing.Size(63, 0);
+            this.yearFBox.Name = "yearFBox";
+            this.yearFBox.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
+            this.yearFBox.Size = new System.Drawing.Size(150, 29);
+            this.yearFBox.TabIndex = 5;
+            this.yearFBox.Text = "연도";
+            this.yearFBox.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // uiComboBox4
+            // yearABox
             // 
-            this.uiComboBox4.FillColor = System.Drawing.Color.White;
-            this.uiComboBox4.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiComboBox4.Items.AddRange(new object[] {
+            this.yearABox.FillColor = System.Drawing.Color.White;
+            this.yearABox.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.yearABox.Items.AddRange(new object[] {
             "1960",
             "1970",
             "1980",
@@ -250,15 +250,15 @@ namespace Dashboard.UI
             "2000",
             "2010",
             "2020"});
-            this.uiComboBox4.Location = new System.Drawing.Point(225, 129);
-            this.uiComboBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiComboBox4.MinimumSize = new System.Drawing.Size(63, 0);
-            this.uiComboBox4.Name = "uiComboBox4";
-            this.uiComboBox4.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
-            this.uiComboBox4.Size = new System.Drawing.Size(150, 29);
-            this.uiComboBox4.TabIndex = 6;
-            this.uiComboBox4.Text = "연도";
-            this.uiComboBox4.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.yearABox.Location = new System.Drawing.Point(225, 129);
+            this.yearABox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.yearABox.MinimumSize = new System.Drawing.Size(63, 0);
+            this.yearABox.Name = "yearABox";
+            this.yearABox.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
+            this.yearABox.Size = new System.Drawing.Size(150, 29);
+            this.yearABox.TabIndex = 6;
+            this.yearABox.Text = "연도";
+            this.yearABox.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label1
             // 
@@ -289,11 +289,11 @@ namespace Dashboard.UI
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(855, 510);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.uiComboBox4);
-            this.Controls.Add(this.uiComboBox2);
-            this.Controls.Add(this.uiComboBox3);
-            this.Controls.Add(this.uiComboBox1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.yearABox);
+            this.Controls.Add(this.CountryBox);
+            this.Controls.Add(this.yearFBox);
+            this.Controls.Add(this.genreBox);
+            this.Controls.Add(this.movieimage);
             this.Controls.Add(this.movieS);
             this.Controls.Add(this.searchview);
             this.Controls.Add(this.searchB);
@@ -301,7 +301,7 @@ namespace Dashboard.UI
             this.Name = "Myinfochild2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.movieimage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -320,11 +320,11 @@ namespace Dashboard.UI
         private System.Windows.Forms.ColumnHeader columnHeader6;
         private System.Windows.Forms.ColumnHeader columnHeader7;
         private System.Windows.Forms.ColumnHeader columnHeader8;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private Sunny.UI.UIComboBox uiComboBox1;
-        private Sunny.UI.UIComboBox uiComboBox2;
-        private Sunny.UI.UIComboBox uiComboBox3;
-        private Sunny.UI.UIComboBox uiComboBox4;
+        private System.Windows.Forms.PictureBox movieimage;
+        private Sunny.UI.UIComboBox genreBox;
+        private Sunny.UI.UIComboBox CountryBox;
+        private Sunny.UI.UIComboBox yearFBox;
+        private Sunny.UI.UIComboBox yearABox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
     }

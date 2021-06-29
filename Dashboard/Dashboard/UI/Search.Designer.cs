@@ -1,7 +1,7 @@
 ﻿
 namespace Dashboard.UI
 {
-    partial class Myinfochild1
+    partial class Search
     {
         /// <summary>
         /// Required designer variable.
@@ -510,16 +510,16 @@ namespace Dashboard.UI
             this.uiSymbolButton1.Text = "찾기";
             this.uiSymbolButton1.Click += new System.EventHandler(this.uiSymbolButton1_Click);
             // 
-            // Myinfochild1
+            // Search
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(855, 510);
             this.Controls.Add(this.panel4);
-            this.Name = "Myinfochild1";
+            this.Name = "Search";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "searchform";
+            this.Text = "search";
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel1.ResumeLayout(false);
