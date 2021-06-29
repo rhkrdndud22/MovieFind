@@ -48,10 +48,10 @@ namespace Dashboard.UI
             starP.Text = sp;
 
             DataTable dt=adapter.selectmovie();
-            dataGridView2.DataSource = dt;
+            Movieview.DataSource = dt;
 
             DataTable da = adapter.selectpoint(name);
-            dataGridView1.DataSource = da;
+            StarpointView.DataSource = da;
             
         }
         

@@ -32,25 +32,25 @@ namespace Dashboard.UI
             this.lbltitle = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.Mgenre = new System.Windows.Forms.Label();
+            this.nam = new System.Windows.Forms.Label();
             this.starP = new System.Windows.Forms.Label();
             this.genL = new System.Windows.Forms.Label();
             this.nameL = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.Movieview = new System.Windows.Forms.DataGridView();
             this.label12 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.StarpointView = new System.Windows.Forms.DataGridView();
             this.label14 = new System.Windows.Forms.Label();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Movieview)).BeginInit();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StarpointView)).BeginInit();
             this.SuspendLayout();
             // 
             // lbltitle
@@ -70,8 +70,8 @@ namespace Dashboard.UI
             this.panel4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
             this.panel4.Controls.Add(this.label3);
-            this.panel4.Controls.Add(this.label2);
-            this.panel4.Controls.Add(this.label1);
+            this.panel4.Controls.Add(this.Mgenre);
+            this.panel4.Controls.Add(this.nam);
             this.panel4.Controls.Add(this.starP);
             this.panel4.Controls.Add(this.genL);
             this.panel4.Controls.Add(this.nameL);
@@ -92,27 +92,27 @@ namespace Dashboard.UI
             this.label3.TabIndex = 7;
             this.label3.Text = "평균 별점";
             // 
-            // label2
+            // Mgenre
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(1, 51);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(131, 25);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "선호하는 장르";
+            this.Mgenre.AutoSize = true;
+            this.Mgenre.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Mgenre.ForeColor = System.Drawing.Color.White;
+            this.Mgenre.Location = new System.Drawing.Point(1, 51);
+            this.Mgenre.Name = "Mgenre";
+            this.Mgenre.Size = new System.Drawing.Size(131, 25);
+            this.Mgenre.TabIndex = 6;
+            this.Mgenre.Text = "선호하는 장르";
             // 
-            // label1
+            // nam
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(49, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 25);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "이름";
+            this.nam.AutoSize = true;
+            this.nam.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nam.ForeColor = System.Drawing.Color.White;
+            this.nam.Location = new System.Drawing.Point(49, 20);
+            this.nam.Name = "nam";
+            this.nam.Size = new System.Drawing.Size(50, 25);
+            this.nam.TabIndex = 5;
+            this.nam.Text = "이름";
             // 
             // starP
             // 
@@ -160,26 +160,26 @@ namespace Dashboard.UI
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
-            this.panel6.Controls.Add(this.dataGridView2);
+            this.panel6.Controls.Add(this.Movieview);
             this.panel6.Controls.Add(this.label12);
             this.panel6.Location = new System.Drawing.Point(9, 228);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(598, 281);
             this.panel6.TabIndex = 14;
             // 
-            // dataGridView2
+            // Movieview
             // 
-            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.GridColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView2.Location = new System.Drawing.Point(8, 45);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersVisible = false;
-            this.dataGridView2.RowHeadersWidth = 60;
-            this.dataGridView2.RowTemplate.Height = 23;
-            this.dataGridView2.Size = new System.Drawing.Size(577, 233);
-            this.dataGridView2.TabIndex = 6;
+            this.Movieview.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.Movieview.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Movieview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Movieview.GridColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Movieview.Location = new System.Drawing.Point(8, 45);
+            this.Movieview.Name = "Movieview";
+            this.Movieview.RowHeadersVisible = false;
+            this.Movieview.RowHeadersWidth = 60;
+            this.Movieview.RowTemplate.Height = 23;
+            this.Movieview.Size = new System.Drawing.Size(577, 233);
+            this.Movieview.TabIndex = 6;
             // 
             // label12
             // 
@@ -196,7 +196,7 @@ namespace Dashboard.UI
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
             this.panel7.Controls.Add(this.button1);
-            this.panel7.Controls.Add(this.dataGridView1);
+            this.panel7.Controls.Add(this.StarpointView);
             this.panel7.Controls.Add(this.label14);
             this.panel7.Location = new System.Drawing.Point(346, 12);
             this.panel7.Name = "panel7";
@@ -217,16 +217,16 @@ namespace Dashboard.UI
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // dataGridView1
+            // StarpointView
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.GridColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 42);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(491, 168);
-            this.dataGridView1.TabIndex = 7;
+            this.StarpointView.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.StarpointView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.StarpointView.GridColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.StarpointView.Location = new System.Drawing.Point(3, 42);
+            this.StarpointView.Name = "StarpointView";
+            this.StarpointView.RowTemplate.Height = 23;
+            this.StarpointView.Size = new System.Drawing.Size(491, 168);
+            this.StarpointView.TabIndex = 7;
             // 
             // label14
             // 
@@ -257,10 +257,10 @@ namespace Dashboard.UI
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Movieview)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StarpointView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -275,14 +275,14 @@ namespace Dashboard.UI
         private System.Windows.Forms.Label nameL;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView Movieview;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView StarpointView;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label nam;
+        private System.Windows.Forms.Label Mgenre;
         private System.Windows.Forms.Label label3;
     }
 }

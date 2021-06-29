@@ -282,7 +282,7 @@ namespace Dashboard.UI
             this.label2.TabIndex = 7;
             this.label2.Text = "까지";
             // 
-            // Myinfochild2
+            // Conditionsearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -298,9 +298,9 @@ namespace Dashboard.UI
             this.Controls.Add(this.searchview);
             this.Controls.Add(this.searchB);
             this.Controls.Add(this.label1);
-            this.Name = "Myinfochild2";
+            this.Name = "Conditionsearch";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Form1";
+            this.Text = "Conditionsearch";
             ((System.ComponentModel.ISupportInitialize)(this.movieimage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
