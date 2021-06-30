@@ -118,7 +118,7 @@ namespace Dashboard.handler
         public DataTable selectmovie()
         {  
            
-            string query = "select movie_title,count(movie_title) find from movie_T Group By movie_title order by find desc";
+            string query = "select movie_title as 영화제목 ,count(movie_title) as 찾은수 from movie_T Group By movie_title order by 찾은수 desc";
             cmd.Connection = conn;
             cmd.CommandText = query;
             OracleDataAdapter ada = new OracleDataAdapter();
@@ -132,7 +132,8 @@ namespace Dashboard.handler
 
         public DataTable selectpoint(string id)
         {
-            string query= "SELECT MOVIE_T.MOVIE_TITLE,Starpoint_T.Starpoint,Starpoint_t.evolation AS FROM MOVIE_T INNER JOIN STARPOINT_T ON MOVIE_T.MOVIE_ID = STARPOINT_t.MOVIE_ID WHERE starpoint_t.mem_ID ='"+id+"'";
+            string query =
+                "SELECT MOVIE_T.MOVIE_TITLE,Starpoint_T.Starpoint,Starpoint_t.evolation AS FROM MOVIE_T INNER JOIN STARPOINT_T ON MOVIE_T.MOVIE_ID = STARPOINT_t.MOVIE_ID WHERE starpoint_t.mem_ID ='" + id + "'";
 
             cmd.Connection = conn;
             cmd.CommandText = query;
@@ -173,20 +174,28 @@ namespace Dashboard.handler
             cmd.ExecuteNonQuery();
         }
 
-        public void insertstarpoint(Star star)
+        public void insertstarpoint(Star star,string id)
         {
-            try
-            {
-                string query = string.Format("insert into starpoint_t values(STARPOINT_T_SEQ.NEXTVAL," + "'{0}'," + "(select movie_id from movie_t  where movie_title ='{1}')," + " {2},'{3}')", star.Mem_id, movie_id, star.Point, star.Evalution);
+            
+             string query = string.Format("SELECT movie_id FROM movie_T where movie_title ='{0}'"+"INTERSECT SELECT movie_id FROM starpoint_t where mem_id = '{1}'",movie_id,id);
                 cmd.Connection = conn;
                 cmd.CommandText = query;
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("별점이 등록되었습니다");
-            }
-            catch(OracleException)
-            {
-                MessageBox.Show("이미 별점을 등록한 영화입니다");
-            }
+                OracleDataReader dr = cmd.ExecuteReader();
+                if (dr.HasRows)
+                {
+                    MessageBox.Show("이미 별점을 등록한 영화입니다");
+                }
+                else
+                {
+                    string query1 = string.Format("insert into starpoint_t values(STARPOINT_T_SEQ.NEXTVAL," + "'{0}'," + "(select movie_id from movie_t  where movie_title ='{1}' and rownum=1)," + " {2},'{3}')", star.Mem_id, movie_id, star.Point, star.Evalution);
+                    cmd.Connection = conn;
+                    cmd.CommandText = query1;
+
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("별점이 등록되었습니다");
+                }
+            
+          
         }
           
             
