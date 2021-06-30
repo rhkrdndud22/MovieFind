@@ -417,7 +417,7 @@ namespace Dashboard.UI
             this.columnHeader7,
             this.columnHeader8});
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(0, 231);
+            this.listView1.Location = new System.Drawing.Point(4, 233);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(855, 280);
             this.listView1.TabIndex = 2;
@@ -433,12 +433,12 @@ namespace Dashboard.UI
             // columnHeader2
             // 
             this.columnHeader2.Text = "링크";
-            this.columnHeader2.Width = 118;
+            this.columnHeader2.Width = 10;
             // 
             // columnHeader3
             // 
             this.columnHeader3.Text = "이미지";
-            this.columnHeader3.Width = 118;
+            this.columnHeader3.Width = 10;
             // 
             // columnHeader4
             // 
