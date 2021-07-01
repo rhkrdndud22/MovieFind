@@ -43,6 +43,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.panelChild = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.uiSymbolButton1 = new Sunny.UI.UISymbolButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -147,6 +148,7 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.uiSymbolButton1);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.panelChildForm);
             this.panel2.Controls.Add(this.panel3);
@@ -232,6 +234,22 @@
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
+            // uiSymbolButton1
+            // 
+            this.uiSymbolButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiSymbolButton1.FillColor = System.Drawing.Color.Transparent;
+            this.uiSymbolButton1.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.uiSymbolButton1.Location = new System.Drawing.Point(50, 112);
+            this.uiSymbolButton1.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiSymbolButton1.Name = "uiSymbolButton1";
+            this.uiSymbolButton1.RectColor = System.Drawing.Color.Transparent;
+            this.uiSymbolButton1.Size = new System.Drawing.Size(100, 30);
+            this.uiSymbolButton1.Style = Sunny.UI.UIStyle.Custom;
+            this.uiSymbolButton1.Symbol = 61596;
+            this.uiSymbolButton1.TabIndex = 14;
+            this.uiSymbolButton1.Text = "Logout";
+            this.uiSymbolButton1.Click += new System.EventHandler(this.uiSymbolButton1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -271,6 +289,7 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panelChild;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private Sunny.UI.UISymbolButton uiSymbolButton1;
     }
 }
 

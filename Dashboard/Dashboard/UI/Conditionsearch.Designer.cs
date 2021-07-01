@@ -48,6 +48,7 @@ namespace Dashboard.UI
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.uiPanel1 = new Sunny.UI.UIPanel();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.movieimage)).BeginInit();
             this.uiPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -55,12 +56,10 @@ namespace Dashboard.UI
             // searchB
             // 
             this.searchB.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.searchB.FillColor = System.Drawing.Color.Transparent;
             this.searchB.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.searchB.Location = new System.Drawing.Point(256, 53);
             this.searchB.MinimumSize = new System.Drawing.Size(1, 1);
             this.searchB.Name = "searchB";
-            this.searchB.RectColor = System.Drawing.Color.Transparent;
             this.searchB.Size = new System.Drawing.Size(135, 103);
             this.searchB.Style = Sunny.UI.UIStyle.Custom;
             this.searchB.TabIndex = 0;
@@ -313,12 +312,27 @@ namespace Dashboard.UI
             this.uiPanel1.Text = "uiPanel1";
             this.uiPanel1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(824, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(29, 23);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Conditionsearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(855, 510);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.uiPanel1);
             this.Controls.Add(this.movieimage);
             this.Controls.Add(this.searchview);
@@ -353,5 +367,6 @@ namespace Dashboard.UI
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private Sunny.UI.UIPanel uiPanel1;
+        private System.Windows.Forms.Button button1;
     }
 }

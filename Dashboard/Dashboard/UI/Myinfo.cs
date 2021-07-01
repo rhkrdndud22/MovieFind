@@ -142,6 +142,12 @@ namespace Dashboard
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+            Application.Exit();
+        }
+
+        private void uiSymbolButton1_Click(object sender, EventArgs e)
+        {
+           
             Close();
         }
     }
