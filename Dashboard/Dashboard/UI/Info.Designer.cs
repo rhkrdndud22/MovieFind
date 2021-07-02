@@ -173,7 +173,7 @@ namespace Dashboard.UI
             this.Movieview.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Movieview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Movieview.GridColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Movieview.Location = new System.Drawing.Point(8, 45);
+            this.Movieview.Location = new System.Drawing.Point(6, 48);
             this.Movieview.Name = "Movieview";
             this.Movieview.RowHeadersVisible = false;
             this.Movieview.RowHeadersWidth = 60;
@@ -219,11 +219,13 @@ namespace Dashboard.UI
             // 
             // StarpointView
             // 
+            this.StarpointView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.StarpointView.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.StarpointView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.StarpointView.GridColor = System.Drawing.SystemColors.ButtonHighlight;
             this.StarpointView.Location = new System.Drawing.Point(3, 42);
             this.StarpointView.Name = "StarpointView";
+            this.StarpointView.RowHeadersWidth = 80;
             this.StarpointView.RowTemplate.Height = 23;
             this.StarpointView.Size = new System.Drawing.Size(491, 168);
             this.StarpointView.TabIndex = 7;
