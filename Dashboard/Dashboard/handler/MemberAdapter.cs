@@ -86,11 +86,12 @@ namespace Dashboard.handler
             movieList.Clear();
         }
 
-        public void addstardb()
+        public void addstardb(string name)
         {
             for (int i = 0; i <starList.Count; i++)
             {
-                ora.insertstarpoint(starList[i]);
+                
+                ora.insertstarpoint(starList[i],name);
             }
             starList.Clear();
         }

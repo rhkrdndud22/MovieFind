@@ -179,7 +179,7 @@ namespace Dashboard.UI
 
                         string id = star_id;
                         adapter.addstar(new Star(id, title, point, evol));
-                        adapter.addstardb();
+                        adapter.addstardb(id);
                     }
                     else
                     {
