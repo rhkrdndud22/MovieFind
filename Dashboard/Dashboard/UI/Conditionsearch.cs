@@ -24,16 +24,16 @@ namespace Dashboard.UI
 
         private void uiButton1_Click(object sender, EventArgs e)
         {
-            
-            
-          
 
-                if (movieS.Text == "")
-                {
-                    MessageBox.Show("검색어를 입력해주세요!");
-                }
-                else
-                {
+
+
+
+            if (movieS.Text == "")
+            {
+                MessageBox.Show("검색어를 입력해주세요!");
+            }
+            else
+            {
                 try
                 {
                     string query1 = "https://openapi.naver.com/v1/search/movie.xml?query=" + movieS.Text + "&display=100&start=1&genre=" + genreBox.SelectedText + "&country=" + CountryBox.SelectedText.Substring(0, 2) + "&yearfrom=" + yearFBox.Text + "&yearto=" + yearABox.Text;
@@ -88,12 +88,12 @@ namespace Dashboard.UI
                         searchview.Items.Add(lvi);
                         //richTextBox1.Text += xn.ChildNodes[i]["title"].InnerText.Replace("<b>", "").Replace("</b>", "") + "\n";
                     }
-                }
+        }
                 catch
                 {
                     MessageBox.Show("연도를 제대로 입력해주세요");
                 }
-               }
+}
             
         }
 
