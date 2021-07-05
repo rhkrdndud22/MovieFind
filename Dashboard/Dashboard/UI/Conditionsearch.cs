@@ -45,14 +45,14 @@ namespace Dashboard.UI
                     string your_client_id = client_id;
                     string your_client_secret = client_secret;
 
-                    WebRequest wr = WebRequest.Create(query1);
-                    wr.Method = "GET";
+                    WebRequest wrq = WebRequest.Create(query1);
+                    wrq.Method = "GET";
                     //X-Naver-Client-Id
                     //X-Naver-Client-Secret
-                    wr.Headers.Add("X-Naver-Client-Id", your_client_id);
-                    wr.Headers.Add("X-Naver-Client-Secret", your_client_secret);
+                    wrq.Headers.Add("X-Naver-Client-Id", your_client_id);
+                    wrq.Headers.Add("X-Naver-Client-Secret", your_client_secret);
 
-                    WebResponse wrs = wr.GetResponse();
+                    WebResponse wrs = wrq.GetResponse();
                     Stream s = wrs.GetResponseStream();
                     StreamReader sr = new StreamReader(s);
 
