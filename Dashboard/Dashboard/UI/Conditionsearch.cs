@@ -36,7 +36,7 @@ namespace Dashboard.UI
                 {
                 try
                 {
-                    string query = "https://openapi.naver.com/v1/search/movie.xml?query=" + movieS.Text + "&display=100&start=1&genre=" + genreBox.SelectedText + "&country=" + CountryBox.SelectedText.Substring(0, 2) + "&yearfrom=" + yearFBox.Text + "&yearto=" + yearABox.Text;
+                    string query1 = "https://openapi.naver.com/v1/search/movie.xml?query=" + movieS.Text + "&display=100&start=1&genre=" + genreBox.SelectedText + "&country=" + CountryBox.SelectedText.Substring(0, 2) + "&yearfrom=" + yearFBox.Text + "&yearto=" + yearABox.Text;
 
                     
 
@@ -45,7 +45,7 @@ namespace Dashboard.UI
                     string your_client_id = client_id;
                     string your_client_secret = client_secret;
 
-                    WebRequest wr = WebRequest.Create(query);
+                    WebRequest wr = WebRequest.Create(query1);
                     wr.Method = "GET";
                     //X-Naver-Client-Id
                     //X-Naver-Client-Secret
