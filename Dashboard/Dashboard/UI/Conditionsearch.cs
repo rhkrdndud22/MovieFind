@@ -24,19 +24,19 @@ namespace Dashboard.UI
 
         private void uiButton1_Click(object sender, EventArgs e)
         {
-            
-            
-          
 
-                if (movieS.Text == "")
-                {
-                    MessageBox.Show("검색어를 입력해주세요!");
-                }
-                else
-                {
-                try
-                {
-                    string query = "https://openapi.naver.com/v1/search/movie.xml?query=" + movieS.Text + "&display=100&start=1&genre=" + genreBox.SelectedText + "&country=" + CountryBox.SelectedText.Substring(0, 2) + "&yearfrom=" + yearFBox.Text + "&yearto=" + yearABox.Text;
+
+
+
+            if (movieS.Text == "")
+            {
+                MessageBox.Show("검색어를 입력해주세요!");
+            }
+            else
+            {
+                /*try
+                {*/
+                    string query1 = "https://openapi.naver.com/v1/search/movie.xml?query=" + movieS.Text + "&display=100&start=1&genre=" + genreBox.SelectedText + "&country=" + CountryBox.SelectedText.Substring(0, 2) + "&yearfrom=" + yearFBox.Text + "&yearto=" + yearABox.Text;
 
                     
 
@@ -45,14 +45,14 @@ namespace Dashboard.UI
                     string your_client_id = client_id;
                     string your_client_secret = client_secret;
 
-                    WebRequest wr = WebRequest.Create(query);
-                    wr.Method = "GET";
+                    WebRequest wrq = WebRequest.Create(query1);
+                    wrq.Method = "GET";
                     //X-Naver-Client-Id
                     //X-Naver-Client-Secret
-                    wr.Headers.Add("X-Naver-Client-Id", your_client_id);
-                    wr.Headers.Add("X-Naver-Client-Secret", your_client_secret);
+                    wrq.Headers.Add("X-Naver-Client-Id", your_client_id);
+                    wrq.Headers.Add("X-Naver-Client-Secret", your_client_secret);
 
-                    WebResponse wrs = wr.GetResponse();
+                    WebResponse wrs = wrq.GetResponse();
                     Stream s = wrs.GetResponseStream();
                     StreamReader sr = new StreamReader(s);
 
@@ -88,12 +88,12 @@ namespace Dashboard.UI
                         searchview.Items.Add(lvi);
                         //richTextBox1.Text += xn.ChildNodes[i]["title"].InnerText.Replace("<b>", "").Replace("</b>", "") + "\n";
                     }
-                }
-                catch
+            /*    }*/
+               /* catch
                 {
                     MessageBox.Show("연도를 제대로 입력해주세요");
-                }
-               }
+                }*/
+}
             
         }
 
