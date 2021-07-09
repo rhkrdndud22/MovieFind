@@ -11,9 +11,9 @@ namespace Dashboard.handler
 {
     class MemberAdapter
     {
-        private List<Member> memberList = new List<Member>();
         private List<Movie> movieList = new List<Movie>();
         private List<Star> starList = new List<Star>();
+        private List<Member> memberList = new List<Member>();
         private OracleHandler ora;
 
         public MemberAdapter(OracleHandler ora)

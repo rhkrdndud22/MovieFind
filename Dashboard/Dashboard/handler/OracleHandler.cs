@@ -29,7 +29,7 @@ namespace Dashboard.handler
 
         public OracleHandler()
         {
-            Console.Write("하이");
+            
             conn = new OracleConnection(ORADB);
             cmd = new OracleCommand();
             dbConnect();
@@ -40,11 +40,11 @@ namespace Dashboard.handler
             try
             {
                 conn.Open();
-                Console.WriteLine("오라클 접속 성공!");
+               
             }
             catch (OracleException )
             {
-                Console.WriteLine("오라클 접속 에러!");
+               
             }
         }
 
@@ -55,7 +55,8 @@ namespace Dashboard.handler
             try
             {
                 string query = string.Format("insert into member_t values" +
-                    "('{0}','{1}','{2}','{3}','{4}','{5}','{6}')", member.Id, member.Pasword, member.Name, member.Tel, member.Birth, member.Lgenre, member.Hgenre);
+                    "('{0}','{1}','{2}','{3}','{4}','{5}','{6}')", member.Id, member.Pasword, 
+                    member.Name, member.Tel, member.Birth, member.Lgenre, member.Hgenre);
                 cmd.Connection = conn;
                 cmd.CommandText = query;
                 cmd.ExecuteNonQuery();
@@ -177,7 +178,8 @@ namespace Dashboard.handler
         public void insertstarpoint(Star star,string id)
         {
             
-             string query = string.Format("SELECT movie_id FROM movie_T where movie_title ='{0}'"+"INTERSECT SELECT movie_id FROM starpoint_t where mem_id = '{1}'",movie_id,id);
+             string query = string.Format("SELECT movie_id FROM movie_T where movie_title ='{0}'"+
+                 "INTERSECT SELECT movie_id FROM starpoint_t where mem_id = '{1}'",movie_id,id);
                 cmd.Connection = conn;
                 cmd.CommandText = query;
                 OracleDataReader dr = cmd.ExecuteReader();
@@ -187,7 +189,9 @@ namespace Dashboard.handler
                 }
                 else
                 {
-                    string query1 = string.Format("insert into starpoint_t values(STARPOINT_T_SEQ.NEXTVAL," + "'{0}'," + "(select movie_id from movie_t  where movie_title ='{1}' and rownum=1)," + " {2},'{3}')", star.Mem_id, movie_id, star.Point, star.Evalution);
+                    string query1 = string.Format("insert into starpoint_t values(STARPOINT_T_SEQ.NEXTVAL," + "'{0}'," 
+                        + "(select movie_id from movie_t  where movie_title ='{1}' and rownum=1)," + " {2},'{3}')",
+                        star.Mem_id, movie_id, star.Point, star.Evalution);
                     cmd.Connection = conn;
                     cmd.CommandText = query1;
 

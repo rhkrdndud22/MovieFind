@@ -61,7 +61,7 @@ namespace Dashboard.UI
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.moviesearch = new Sunny.UI.UITextBox();
-            this.uiSymbolButton1 = new Sunny.UI.UISymbolButton();
+            this.searchB = new Sunny.UI.UISymbolButton();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -76,7 +76,7 @@ namespace Dashboard.UI
             this.panel4.Controls.Add(this.listView1);
             this.panel4.Controls.Add(this.pictureBox1);
             this.panel4.Controls.Add(this.moviesearch);
-            this.panel4.Controls.Add(this.uiSymbolButton1);
+            this.panel4.Controls.Add(this.searchB);
             this.panel4.Location = new System.Drawing.Point(-2, -1);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(858, 514);
@@ -490,25 +490,25 @@ namespace Dashboard.UI
             this.moviesearch.TabIndex = 2;
             this.moviesearch.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // uiSymbolButton1
+            // searchB
             // 
-            this.uiSymbolButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiSymbolButton1.FillColor = System.Drawing.Color.Transparent;
-            this.uiSymbolButton1.FillDisableColor = System.Drawing.Color.Transparent;
-            this.uiSymbolButton1.FillHoverColor = System.Drawing.Color.Transparent;
-            this.uiSymbolButton1.FillPressColor = System.Drawing.Color.Transparent;
-            this.uiSymbolButton1.FillSelectedColor = System.Drawing.Color.Transparent;
-            this.uiSymbolButton1.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiSymbolButton1.Location = new System.Drawing.Point(161, 30);
-            this.uiSymbolButton1.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiSymbolButton1.Name = "uiSymbolButton1";
-            this.uiSymbolButton1.RectColor = System.Drawing.Color.Transparent;
-            this.uiSymbolButton1.Size = new System.Drawing.Size(74, 35);
-            this.uiSymbolButton1.Style = Sunny.UI.UIStyle.Custom;
-            this.uiSymbolButton1.Symbol = 61473;
-            this.uiSymbolButton1.TabIndex = 2;
-            this.uiSymbolButton1.Text = "찾기";
-            this.uiSymbolButton1.Click += new System.EventHandler(this.uiSymbolButton1_Click);
+            this.searchB.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.searchB.FillColor = System.Drawing.Color.Transparent;
+            this.searchB.FillDisableColor = System.Drawing.Color.Transparent;
+            this.searchB.FillHoverColor = System.Drawing.Color.Transparent;
+            this.searchB.FillPressColor = System.Drawing.Color.Transparent;
+            this.searchB.FillSelectedColor = System.Drawing.Color.Transparent;
+            this.searchB.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.searchB.Location = new System.Drawing.Point(161, 30);
+            this.searchB.MinimumSize = new System.Drawing.Size(1, 1);
+            this.searchB.Name = "searchB";
+            this.searchB.RectColor = System.Drawing.Color.Transparent;
+            this.searchB.Size = new System.Drawing.Size(74, 35);
+            this.searchB.Style = Sunny.UI.UIStyle.Custom;
+            this.searchB.Symbol = 61473;
+            this.searchB.TabIndex = 2;
+            this.searchB.Text = "찾기";
+            this.searchB.Click += new System.EventHandler(this.uiSymbolButton1_Click);
             // 
             // Search
             // 
@@ -530,7 +530,7 @@ namespace Dashboard.UI
 
         #endregion
         private System.Windows.Forms.Panel panel4;
-        private Sunny.UI.UISymbolButton uiSymbolButton1;
+        private Sunny.UI.UISymbolButton searchB;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;

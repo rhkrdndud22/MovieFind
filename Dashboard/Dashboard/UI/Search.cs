@@ -50,31 +50,17 @@ namespace Dashboard.UI
 
                 WebRequest wr = WebRequest.Create(query);
                 wr.Method = "GET";
-                //X-Naver-Client-Id
-                //X-Naver-Client-Secret
                 wr.Headers.Add("X-Naver-Client-Id", your_client_id);
                 wr.Headers.Add("X-Naver-Client-Secret", your_client_secret);
-
                 WebResponse wrs = wr.GetResponse();
                 Stream s = wrs.GetResponseStream();
                 StreamReader sr = new StreamReader(s);
-
                 string response = sr.ReadToEnd();
-
-                //richTextBox1.Text = response;
-
                 XmlDocument xd = new XmlDocument();
                 xd.LoadXml(response);
-
-                //rss/채널/
                 XmlNode xn = xd["rss"]["channel"];
-
-                //0, 3
                 
-
-                //원래 리스트뷰에 있던걸 삭제한다!
                 listView1.Items.Clear();
-
                 for (int i = 7; i < xn.ChildNodes.Count; i++)
                 {
                     ListViewItem lvi = new ListViewItem();
@@ -91,6 +77,16 @@ namespace Dashboard.UI
                     listView1.Items.Add(lvi);
                     //richTextBox1.Text += xn.ChildNodes[i]["title"].InnerText.Replace("<b>", "").Replace("</b>", "") + "\n";
                 }
+              
+
+
+
+                
+
+
+                
+
+
             }
         }
         
