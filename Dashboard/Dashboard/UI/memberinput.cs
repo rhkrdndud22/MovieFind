@@ -103,7 +103,8 @@ namespace Dashboard
             }
 
            
-                adapter.addMember(new Member(id, password, name, telF + telB, (birthY + birthM + birthD), Mgenre, Hgenre));
+                adapter.addMember(new Member(id, password, name, telF + telB, 
+                    (birthY + birthM + birthD), Mgenre, Hgenre));
            
             
                 adapter.addReceiptDb();
@@ -116,11 +117,12 @@ namespace Dashboard
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+       
+        private void Duplicate_Click(object sender, EventArgs e)
         {
             string name = memID.Text;
-                
-               adapter.selectdb(name);
+
+            adapter.selectdb(name);
         }
     }
 }
