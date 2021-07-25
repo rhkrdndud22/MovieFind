@@ -219,7 +219,7 @@ namespace Dashboard
             this.button2.TabIndex = 33;
             this.button2.Text = "회원가입";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.input_Click);
             // 
             // pictureBox1
             // 

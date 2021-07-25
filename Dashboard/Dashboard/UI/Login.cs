@@ -12,49 +12,45 @@ using System.Windows.Forms;
 
 namespace Dashboard
 {
-    public partial class Form2 : Form
+    public partial class LoginForm : Form
     {
         OracleHandler ora;
         MemberAdapter adapter;
         
-        public Form2()
+        public LoginForm()
         {
             InitializeComponent();
             ora = new OracleHandler();
             adapter = new MemberAdapter(ora);
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+       
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            
-            new Form3(adapter).ShowDialog();
-            
-                adapter.addReceiptDb();
-         
-              
+       
 
+        
 
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void Login_Click(object sender, EventArgs e)
         {
             string id = textBox1.Text;
             Search.star_id = textBox1.Text;
             Info.name = textBox1.Text;
             Form1.name = textBox1.Text;
-                string password = textBox2.Text;
-                adapter.logindb(id,password);
-           
-            
-                
-            
-            
+            string password = textBox2.Text;
+            adapter.logindb(id, password);
+        }
+
+        private void newID_Click(object sender, EventArgs e)
+        {
+            new Form3(adapter).ShowDialog();
+
+            adapter.addReceiptDb();
+        }
+
+        private void exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+
         }
     }
 }

@@ -47,7 +47,6 @@ C:\Users\곽우영\Documents\GitHub\personalproject1\Dashboard\Dashboard\bin\Deb
 C:\Users\곽우영\Documents\GitHub\personalproject1\Dashboard\Dashboard\obj\Debug\Dashboard.csproj.AssemblyReference.cache
 C:\Users\곽우영\Documents\GitHub\personalproject1\Dashboard\Dashboard\obj\Debug\Dashboard.UI.Info.resources
 C:\Users\곽우영\Documents\GitHub\personalproject1\Dashboard\Dashboard\obj\Debug\Dashboard.Form1.resources
-C:\Users\곽우영\Documents\GitHub\personalproject1\Dashboard\Dashboard\obj\Debug\Dashboard.Form2.resources
 C:\Users\곽우영\Documents\GitHub\personalproject1\Dashboard\Dashboard\obj\Debug\Dashboard.Form3.resources
 C:\Users\곽우영\Documents\GitHub\personalproject1\Dashboard\Dashboard\obj\Debug\Dashboard.Properties.Resources.resources
 C:\Users\곽우영\Documents\GitHub\personalproject1\Dashboard\Dashboard\obj\Debug\Dashboard.csproj.GenerateResource.cache
@@ -103,3 +102,4 @@ D:\github\personalproject1\FETCH_HEAD\Dashboard\Dashboard\obj\Debug\Dashboard.cs
 D:\github\personalproject1\FETCH_HEAD\Dashboard\Dashboard\obj\Debug\Dashboard.csproj.CopyComplete
 D:\github\personalproject1\FETCH_HEAD\Dashboard\Dashboard\obj\Debug\Dashboard.exe
 D:\github\personalproject1\FETCH_HEAD\Dashboard\Dashboard\obj\Debug\Dashboard.pdb
+C:\Users\곽우영\Documents\GitHub\personalproject1\Dashboard\Dashboard\obj\Debug\Dashboard.LoginForm.resources

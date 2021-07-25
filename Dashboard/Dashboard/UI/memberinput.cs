@@ -30,7 +30,17 @@ namespace Dashboard
             Close();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        
+
+       
+        private void Duplicate_Click(object sender, EventArgs e)
+        {
+            string name = memID.Text;
+
+            adapter.selectdb(name);
+        }
+
+        private void input_Click(object sender, EventArgs e)
         {
             string id = memID.Text;
             string password = memP.Text;
@@ -43,20 +53,20 @@ namespace Dashboard
             string Mgenre = memMgenre.Text;
             string Hgenre = memHgenre.Text;
 
-            string[] arrData = new string[] { id, password, name, telF, telB, birthY,birthM,birthD, Mgenre, Hgenre };
-            object[] arrObj = new object[] { memID, memP,memN,memTF,memTB,memY,memM,memD,memMgenre,memHgenre };
+            string[] arrData = new string[] { id, password, name, telF, telB, birthY, birthM, birthD, Mgenre, Hgenre };
+            object[] arrObj = new object[] { memID, memP, memN, memTF, memTB, memY, memM, memD, memMgenre, memHgenre };
             string[] arrS = new string[] { "아이디 안적음", "비밀번호 안적음", "이름 안적음", "전화번호 앞자리 없음", "전화번호 뒷자리 없음", "생년 안적음", "월 안적음", "일 안적음", " 선호하는 장르선택안함", "싫어하는 장르 선택안함" };
-           
+
             Dictionary<object, string> dicinput = new Dictionary<object, string>();
             for (int i = 0; i < arrData.Length; i++)
             {
                 dicinput.Add(arrObj[i], arrData[i]);
             }
-          
-             int cnt = 0;
-            foreach(KeyValuePair<object,string> item in dicinput)
-                {
-                if(item.Value.Equals("")|| item.Value.Equals("선택"))
+
+            int cnt = 0;
+            foreach (KeyValuePair<object, string> item in dicinput)
+            {
+                if (item.Value.Equals("") || item.Value.Equals("선택"))
                 {
                     MessageBox.Show(arrS[cnt]);
                     ActiveControl = item.Key as Control;
@@ -66,7 +76,7 @@ namespace Dashboard
 
                 cnt++;
             }
-           //이름 제한걸기
+            //이름 제한걸기
             string chkName = Regex.Replace(name, @"[^가-힣]", "");
 
             if (chkName.Length != name.Length)
@@ -75,7 +85,7 @@ namespace Dashboard
                 return;
             }
             //아이디 제한걸기
-            string chkID = Regex.Replace(id,@"^[0-9a-zA-Z]{1,100}$","");
+            string chkID = Regex.Replace(id, @"^[0-9a-zA-Z]{1,100}$", "");
             if (chkID.Length == id.Length)
             {
                 MessageBox.Show("잘못된 아이디 형식");
@@ -83,7 +93,7 @@ namespace Dashboard
             }
 
             //전화번호 제한 걸기
-            string telALL = telF+ telB;
+            string telALL = telF + telB;
             if (telALL.Length == 10 || telALL.Length == 11)
             {
                 Regex regex0 = new Regex(@"01{1}[016789]{1}[0-9]{7,8}");
@@ -102,27 +112,14 @@ namespace Dashboard
                 return;
             }
 
-           
-                adapter.addMember(new Member(id, password, name, telF + telB, 
-                    (birthY + birthM + birthD), Mgenre, Hgenre));
-           
-            
-                adapter.addReceiptDb();
-                
-            
-          
+
+            adapter.addMember(new Member(id, password, name, telF + telB,
+                (birthY + birthM + birthD), Mgenre, Hgenre));
 
 
+            adapter.addReceiptDb();
 
 
-        }
-
-       
-        private void Duplicate_Click(object sender, EventArgs e)
-        {
-            string name = memID.Text;
-
-            adapter.selectdb(name);
         }
     }
 }
