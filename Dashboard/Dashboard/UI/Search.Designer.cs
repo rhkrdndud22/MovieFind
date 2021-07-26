@@ -50,7 +50,7 @@ namespace Dashboard.UI
             this.starpoint = new Sunny.UI.UITextBox();
             this.subtitle = new Sunny.UI.UITextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.movieList = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -73,7 +73,7 @@ namespace Dashboard.UI
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
             this.panel4.Controls.Add(this.panel1);
             this.panel4.Controls.Add(this.label3);
-            this.panel4.Controls.Add(this.listView1);
+            this.panel4.Controls.Add(this.movieList);
             this.panel4.Controls.Add(this.pictureBox1);
             this.panel4.Controls.Add(this.moviesearch);
             this.panel4.Controls.Add(this.searchB);
@@ -405,9 +405,9 @@ namespace Dashboard.UI
             this.label3.TabIndex = 23;
             this.label3.Text = "영화제목";
             // 
-            // listView1
+            // movieList
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.movieList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3,
@@ -416,14 +416,14 @@ namespace Dashboard.UI
             this.columnHeader6,
             this.columnHeader7,
             this.columnHeader8});
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(4, 233);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(855, 280);
-            this.listView1.TabIndex = 2;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
-            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
+            this.movieList.HideSelection = false;
+            this.movieList.Location = new System.Drawing.Point(4, 233);
+            this.movieList.Name = "movieList";
+            this.movieList.Size = new System.Drawing.Size(855, 280);
+            this.movieList.TabIndex = 2;
+            this.movieList.UseCompatibleStateImageBehavior = false;
+            this.movieList.View = System.Windows.Forms.View.Details;
+            this.movieList.SelectedIndexChanged += new System.EventHandler(this.movieList_SelectedIndexChanged);
             // 
             // columnHeader1
             // 
@@ -508,7 +508,7 @@ namespace Dashboard.UI
             this.searchB.Symbol = 61473;
             this.searchB.TabIndex = 2;
             this.searchB.Text = "찾기";
-            this.searchB.Click += new System.EventHandler(this.uiSymbolButton1_Click);
+            this.searchB.Click += new System.EventHandler(this.SearchMovie_Click);
             // 
             // Search
             // 
@@ -531,7 +531,7 @@ namespace Dashboard.UI
         #endregion
         private System.Windows.Forms.Panel panel4;
         private Sunny.UI.UISymbolButton searchB;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView movieList;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
