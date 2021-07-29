@@ -36,7 +36,8 @@ namespace Dashboard.UI
             {
                 /*try
                 {*/
-                    string query1 = "https://openapi.naver.com/v1/search/movie.xml?query=" + movieS.Text + "&display=100&start=1&genre=" + genreBox.SelectedText + "&country=" + CountryBox.SelectedText.Substring(0, 2) + "&yearfrom=" + yearFBox.Text + "&yearto=" + yearABox.Text;
+                    string query1 = "https://openapi.naver.com/v1/search/movie.xml?query=" + movieS.Text + "&display=100&start=1&genre=" 
+                    + genreBox.SelectedText + "&country=" + CountryBox.SelectedText.Substring(0, 2) + "&yearfrom=" + yearFBox.Text + "&yearto=" + yearABox.Text;
 
                     
 
